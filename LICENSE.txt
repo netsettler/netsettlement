@@ -1,0 +1,17 @@
+There is no overarching license for this repository. You can stop looking.
+
+The repository contains historical artifacts from unrelated places and
+so any sense of license or related permission will be offered locally
+within the context of subdirectories.
+
+The LICENSES/ directory follows the convention described by the REUSE
+Specification (https://reuse.software/spec-3.3/): license reference
+files are placed in a top-level LICENSES/ directory and named using
+SPDX license identifiers or local LicenseRef-* identifiers.
+
+Importantly, the presence of any particular license in the LICENSES/
+directory is not intended to imply that the named license applies to
+all content in this repository.  These files serve only to document
+the meaning of standard SPDX identifiers or locally define
+LicenseRef-xxx identifiers for licenses that are intrinsic to one or
+more of the artifacts contained in this repository.
