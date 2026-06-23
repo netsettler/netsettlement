@@ -1,0 +1,44 @@
+What follows is a checked transcription of the file contents for
+scanned file oz:<kmp.kea>copyright.text.8 (22 June 1984 11:50:08).
+
+The contact information is reproduced because it was present in the
+historical file. No present-day validity of the postal address or
+telephone number is implied. Please use due care and personal
+consideration when assessing whether and how to use such data now,
+so many years later.
+
+ -kmp (Kent M. Pitman) 21-Jun-2026
+
+========================================================================
+    Contents of file oz:<kmp.kea>copyright.text.8 follow
+========================================================================
+
+                                       -*- Mode:Text; Fonts:MEDFNB; -*-
+
+************************************************************************
+*                                                                      *
+*   (c) 1984, The Open University                                      *
+*                                                                      *
+*             All code in the KEA system is protected by copyright.    *
+*                                                                      *
+*             All rights reserved, except those named specifically     *
+*             here.                                                    *
+*                                                                      *
+*             The code contained in the KEA system may be freely       *
+*             copied provided that the code is not offered for sale    *
+*             or resale and that original source file and authorship   *
+*             information appear and that the copy states that the     *
+*             copying was done by permission of the Open University.   *
+*                                                                      *
+************************************************************************
+
+Author(s):     Kent M. Pitman
+
+For more information, please contact
+
+       Marc Eisenstadt
+       Human Cognition Research Laboratory
+       Milton Keynes, MK7 6AA
+       ENGLAND
+
+       UK Telephone: (0908) 65 3149

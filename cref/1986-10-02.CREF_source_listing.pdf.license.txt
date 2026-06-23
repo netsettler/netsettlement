@@ -1,0 +1,81 @@
+What follows is a checked transcription of the file contents for
+scanned file S:>KMP>cref>copyright.text.6 (07 August 1986 22:04:26).
+
+The contact information is reproduced because it was present in the
+historical file. No present-day validity of any postal address,
+telephone number, or email address is implied. Please use due care and
+personal consideration when assessing whether and how to use such data
+now, so many years later.
+
+ -kmp (Kent M. Pitman) 21-Jun-2026
+
+========================================================================
+    Contents of file S:>KMP>cref>copyright.text.6 follow
+========================================================================
+
+                                        -*- Mode:Text; Fonts:MEDFNB; -*-
+
+             (c) Copyright 1984
+                 The Open University,
+                 Milton Keynes, England
+
+Enhancements (c) Copyright 1984, 1985
+                 Massachusetts Institute of Technology,
+                 Cambridge, MA, USA
+
+All rights reserved, except those named below.
+
+The CREF (Cross-Referenced Editing System) system originated as
+a prototype for the KEA (Knowledge Engineer's Assistant) by
+Kent M. Pitman at the Open University in Milton Keynes, England.
+
+The source code for KEA 90.0x belongs to the Open University and
+Kent M. Pitman at the MIT AI Lab was given permission to continue
+its development at the MIT Artificial Intelligence Laboratory
+in Cambridge, MA, USA.
+
+Patches to make KEA 90.1x through 90.7x, and other changes which
+resulted in CREF 1.0x and above constitute enhancements which
+belong to the MIT Artificial Intelligence Laboratory.
+
+The code contained in the KEA/CREF systems may be freely copied
+provided that the code is not offered for sale or resale and that
+original source file, copyright, and authorship information appear
+and that the copy states that copying was done by permission of
+the Open University and the Massachusetts Institute of Technology.
+
+``CREF: An Editing Facility for Managing Structured Text'' is
+a description of the CREF system which was jointly published by
+MIT and the Open University.
+
+ Memo No. 829
+ Artificial Intelligence Laboratory
+ Massachusetts Institute of Technology
+ Cambridge, MA, USA 02139
+
+ Technical Report No. 14
+ Human Cognition Research Laboratory
+ Open University
+ Milton Keynes, ENGLAND MK7 6AA
+
+Further information about CREF and the KEA can be obtained from:
+
+        Kent M. Pitman
+        Symbolics, Inc.
+        11 Cambridge Center
+        Cambridge, MA  02142 (USA)
+
+        Internet:        KMP@SCRC-Stony-Brook.ARPA
+                         KMP@Symbolics.COM
+                         KMP@AI.AI.MIT.EDU
+        Telephone (USA): (617) 577-7500
+
+ or
+
+        Marc Eisenstadt
+        Human Cognition Research Laboratory
+        Milton Keynes, MK7 6AA
+        ENGLAND
+
+        Arpanet:        MEISENSTADT@USC-ECLB
+        Telephone (UK): (0908) 65-3149

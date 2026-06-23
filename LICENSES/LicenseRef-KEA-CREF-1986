@@ -1,0 +1,44 @@
+SPDX local license identifier: LicenseRef-KEA-CREF-1986
+
+This file contains a checked transcription of the historical
+KEA/CREF permission notice from S:>KMP>cref>copyright.text.6,
+dated "8/07/86 22:04:26" (i.e., 7 Aug 1986).
+
+Note: The historical legal notice did not address any potential
+license issues relating to the Symbolics Lisp Machine system
+environment on which the associated code depended, including
+components such as Zwei and Converse. In creating this historical
+archive, no attempt has been made to revisit that matter.
+The notice is simply reproduced as originally written.
+
+The transcribed historical notice follows.
+========================================================================
+
+             (c) Copyright 1984
+                 The Open University,
+                 Milton Keynes, England
+
+Enhancements (c) Copyright 1984, 1985
+                 Massachusetts Institute of Technology,
+                 Cambridge, MA, USA
+
+All rights reserved, except those named below.
+
+The CREF (Cross-Referenced Editing System) system originated as
+a prototype for the KEA (Knowledge Engineer's Assistant) by
+Kent M. Pitman at the Open University in Milton Keynes, England.
+
+The source code for KEA 90.0x belongs to the Open University and
+Kent M. Pitman at the MIT AI Lab was given permission to continue
+its development at the MIT Artificial Intelligence Laboratory
+in Cambridge, MA, USA.
+
+Patches to make KEA 90.1x through 90.7x, and other changes which
+resulted in CREF 1.0x and above constitute enhancements which
+belong to the MIT Artificial Intelligence Laboratory.
+
+The code contained in the KEA/CREF systems may be freely copied
+provided that the code is not offered for sale or resale and that
+original source file, copyright, and authorship information appear
+and that the copy states that copying was done by permission of
+the Open University and the Massachusetts Institute of Technology.

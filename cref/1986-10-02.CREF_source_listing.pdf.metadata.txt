@@ -1,0 +1,98 @@
+About CREF (October 2, 1986)
+
+The Cross-Referenced Editing Facility (CREF) was created by Kent Pitman (KMP),
+then of the MIT AI Lab. KMP flew to the Open University (OU) during the
+summer of 1984 to help kick off the Knowledge Engineer's Assistant (KEA, and
+later KEATS) project, a decade-long research project in knowledge engineering.
+
+Development work for CREF was on a Symbolics Lisp Machine named Alan Turing,
+or just Turing, running Release 4.5. It was so-named because the Open
+University is right next to Bletchley Park, and the building we were working
+in was said to be of temporary construction during World War II (but never
+torn down after) and to have housed, among other things, Turing's work. They
+referred to it as "Turing's Hut".
+
+About this Source Listing
+
+This is one of two source listings I have for CREF. There is at least
+one file from October 1986 here, so I take this to be the later of the
+two listings. All files in this set are from S:>KMP>cref>, so I've
+just listed files relative to that. The S: refers to the Symbolics
+file server SCRC-STONY-BROOK. (By convention, Symbolics file servers
+like Stony Brook and Quabbin were named after reservoirs.)
+
+While I may have printed this out at Symbolics, this was not a
+Symbolics work product. I was just borrowing my work account for a
+personal use, which was common in those days. Some of us lived our
+whole lives online and yet personal computers were not yet cheap
+enough that we had our own computer.
+
+Files in this Source Listing
+
+-------------------------------------+---------------------+-------
+     File (in S:>KMP>cref>)            Date                  Pages
+-------------------------------------+---------------------+-------
+copyright.text.6                       1986-08-07 22:04:26      1
+sysdcl.lisp.1                          1985-12-08 22:21:56      2
+source>zwei-patch-for-rel-6-1.lisp.1   1986-07-25 13:06:45      2
+source>basic.lisp.51                   1985-01-06 17:07:05      2
+source>string.lisp.10                  1985-01-06 17:07:03      3
+source>flavor-magic.lisp.17            1985-01-06 17:07:02      3
+source>tv-magic.lisp.64                1985-01-06 17:06:56     11
+source>macro.lisp.40                   1985-01-06 17:06:54      4
+source>initialize.lisp.4               1985-01-06 17:06:52      1
+source>profile.lisp.15                 1985-01-06 17:06:51      2
+source>io.lisp.7                       1985-01-06 17:06:49      3
+source>zwei-utilities.lisp.63          1985-01-06 17:06:45     17
+source>greeting.lisp.43                1985-01-06 17:06:43      4
+source>command.lisp.48                 1985-01-06 17:06:39     10
+source>save.lisp.52                    1985-01-06 17:06:36      2
+source>node.lisp.67                    1985-01-06 17:06:34      7
+source>zwei.lisp.121                   1985-01-09 20:19:41     10
+source>zwei-debug.lisp.32              1985-01-06 17:06:25      2
+source>graph.lisp.82                   1985-01-06 17:06:23     11
+source>viewport.lisp.25                1985-01-15 22:11:54      7
+source>window.lisp.252                 1986-10-02 15:57:35     12
+source>menu.lisp.23                    1985-01-26 20:06:16     10
+source>syscmd.lisp.13                  1985-01-06 17:06:11      2
+source>buffer.lisp.11                  1985-01-06 17:06:09      1
+source>context.lisp.54                 1985-01-06 17:06:04     14
+source>collection.lisp.132             1985-01-06 17:05:48      9
+source>collection-commands.lisp.6      1985-01-06 17:05:32      3
+source>segment.lisp.294                1985-01-27 21:23:28     18
+source>keyword.lisp.41                 1985-01-26 20:06:10      5
+source>diagram.lisp.142                1985-01-06 17:05:24     11
+source>parse.lisp.31                   1985-01-19 21:52:43      3
+source>filter.lisp.70                  1985-01-06 17:05:20      5
+source>memo.lisp.20                    1985-01-06 17:05:19      4
+source>xref.lisp.21                    1985-08-16 00:47:51      4
+source>code.lisp.12                    1985-01-27 00:08:52      3
+source>defs.lisp.32                    1985-01-26 21:07:45      3
+
+About this Scan
+
+I have also hand-checked the printed pages against what is in the scanned pdf,
+and all pages seem present and in the same order.
+
+Since the collection did not identify a specific date, I have chosen to
+identify the date of this source listing as corresponding to the most recent
+of its file dates (S:>KMP>cref>source>window.lisp.252, 2 October 1986).
+
+Caveats About Licensing
+
+This source listing was prepared for use with Symbolics Lisp Machine Release
+6.1. Some files may contain code fragments, patches, or interface assumptions
+specific to the Lisp Machine system environment, including ZWEI.
+
+The historical listing includes the KEA/CREF permission notice reproduced in the
+companion copyright file. It does not include separate license terms for the
+underlying Lisp Machine system environment. This archive preserves the listing
+as a historical artifact and does not attempt to reconstruct or add third-party
+notices that were not present in the listing.
+
+Photo
+
+There is an accompanying photo of this artifact from before it was scanned
+and marked for recycling. Look for a file with '.photo.' in its name.
+
+ -kmp (Kent M. Pitman) 22-Jun-2026

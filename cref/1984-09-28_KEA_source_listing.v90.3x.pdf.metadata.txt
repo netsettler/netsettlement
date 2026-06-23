@@ -1,0 +1,156 @@
+KEA 90.3x (September 28, 1984)
+
+About CREF
+
+The Cross-Referenced Editing Facility (CREF) was created by Kent Pitman (KMP),
+then of the MIT AI Lab. KMP flew to the Open University (OU) during the
+summer of 1984 to help kick off the Knowledge Engineer's Assistant (KEA, and
+later KEATS) project, a decade-long research project in knowledge engineering.
+
+Development work for CREF was on a Symbolics Lisp Machine named Alan Turing,
+or just Turing, running Release 4.5. It was so-named because the Open
+University is right next to Bletchley Park, and the building we were working
+in was said to be of temporary construction during World War II (but never
+torn down after) and to have housed, among other things, Turing's work. They
+referred to it as "Turing's Hut".
+
+About this Source Listing
+
+This is one of two source listings I have for CREF. Because filenames are on
+the OZ file system, an MIT machine running the TOPS-20 operating system, and
+because of the file dates, it's reasonable to assume this was made shortly
+after KMP's return from the OU to MIT, and that this is pretty close to the
+original source code as it existed at the end of his summer project.
+
+For reference, filenames are
+   host:device:<dir.subdir.subsubdir...>name.type.version
+and <.subdir> is a way of doing relative reference. The device
+specifier `ps:` refers to `primary storage`, where pretty much all
+files on the machine named OZ lived. But `ps:` was the default and
+therefore omitted. The actual filename as viewed from a Lisp Machine
+aware of host `oz` and its file system type was `oz:ps:<kmp.kea>`. But
+with the device expected to default, it was just written as
+`oz:<kmp.kea>` (and `<kmp.kea>` was what was presented by the Lisp
+Machine to the host `oz` as a natively recognizable string).
+
+There is a later source listing for CREF (from September 1986) that probably
+contains modifications made subsequent to KMP's return to MIT.
+
+Note that this listing is apparently missing a sysdcl.lisp, which would
+conventionally contain the DEFSYSTEM description to load this system.
+There is a sysdcl.lisp in the later sources that could probably be used.
+
+Files in this Source Listing
+
+---------------------------------------+----------------------+-------
+     File (in oz:<kmp.kea>)              File Date              Pages
+---------------------------------------+----------------------+-------
+
+copyright.text.8                         1984-06-22 11:50:08     1
+<.source>basic.lisp.48                   1984-09-28 21:56:47     2
+<.source>buffer.lisp.8                   1984-07-16 14:57:03     1
+<.source>cluster.lisp.19                 1984-07-06 16:34:50     5
+<.source>code.lisp.5                     1984-08-02 00:13:26     3
+<.source>collection.lisp.126             1984-08-02 00:01:49     9
+<.source>collection-commands.lisp.3      1984-07-20 15:48:55     3
+<.source>command.lisp.40                 1984-08-14 14:13:42    10
+<.source>context.lisp.50                 1984-08-02 00:13:39    14
+<.source>defs.lisp.22                    1984-08-01 21:58:31     3
+<.source>diagram.lisp.139                1984-07-31 17:33:32    11
+<.source>filter.lisp.67                  1984-07-31 15:20:07     5
+<.source>flavor-magic.lisp.14            1984-07-31 09:45:21     3
+<.source>graph.lisp.79                   1984-07-27 06:29:20    12
+<.source>greeting.lisp.37                1984-07-05 13:43:14     4
+<.source>initialize.lisp.2               1984-07-17 17:19:44     1
+<.source>io.lisp.4                       1984-07-20 10:05:14     3
+<.source>keyword.lisp.36                 1984-07-31 15:39:28     5
+<.source>macro.lisp.36                   1984-07-29 18:56:57     4
+<.source>memo.lisp.17                    1984-07-31 07:45:53     4
+<.source>menu.lisp.19                    1984-07-31 17:33:40    11
+<.source>node.lisp.62                    1984-07-22 14:38:06     8
+<.source>parse.lisp.24                   1984-08-14 17:24:22     1
+<.source>profile.lisp.12                 1984-07-31 09:29:27     2
+<.source>save.lisp.49                    1984-08-02 00:27:58     2
+<.source>segment.lisp.251                1984-08-02 00:01:36    15
+<.source>string.lisp.7                   1984-07-19 10:04:06     3
+<.source>syscmd.lisp.9                   1984-07-31 09:27:04     2
+<.source>tv-magic.lisp.61                1984-07-22 13:34:07    11
+<.source>viewport.lisp.21                1984-07-29 08:54:24     8
+<.source>window.lisp.239                 1984-07-31 17:33:46    12
+<.source>xref.lisp.13                    1984-07-31 15:39:14     5
+<.source>zwei.lisp.116                   1984-08-02 00:13:31    10
+<.source>zwei-debug.lisp.29              1984-06-22 11:28:17     2
+<.source>zwei-patch-for-rel-4-5.lisp.10  1984-07-30 10:57:55     2
+<.source>zwei-utilities.lisp.52          1984-08-23 14:17:18    17
+
+About Lisp File Headers
+
+Numerous lisp source files have initial content like:
+
+========================================================================
+;;; -*- Mode:LISP; Package:KEA; Base:10; Fonts:MEDFNB; -*-
+;;;
+;;; (c) 1984, The Open University
+;;;           All Rights Reserved.
+;;;           See KEA: KEA; COPYRIGHT TEXT for more information.
+========================================================================
+
+The first line is a file attribute list interpreted by the Lisp
+machine to set up environmental and display information for the file.
+
+The fifth line refers to the file "KEA: KEA; COPYRIGHT TEXT", which is
+a "logical pathname" notation that was available on the Lisp Machine at
+the time and later adopted into Common Lisp. Directories on a logical
+pathname host (KEA:) were mapped individually by a file not included
+in this bundle, but conventionally using the same name as a directory
+(KEA;) refers to the root directory for that host. So this reference
+is plainly referring to oz:<kmp.kea>copyright.text.8, which is part of
+the collection and does have such additional details.
+
+The file oz:<kmp.kea>copyright.text.8 (22 June 1984 11:50:08), is therefore
+what was referred to in Lisp Machine logical filename format as the file
+named "KEA: KEA; COPYRIGHT TEXT" in Lisp source files.
+
+So that one does not have to load the entire large PDF file into
+memory just to discover its license requirements, a companion file to
+this '.pdf.metadata.txt' file, with instead the multi-part extension
+'.pdf.license.txt', contains a true copy of the scanned license
+file's contents, along with some framing information reminding
+modern-day readers of the fragility of decades-old contact information.
+
+About this Scan
+
+This collection was originally velobound. I removed the binding and
+scanned the individual pages. Before disposing of the hardcopy pages,
+which I could not afford the storage to keep, I hand-checked the
+printed pages against what is in this scanned PDF. All pages seem
+present and in the same order.
+
+There were no cover pages for individual files in the velobound collection.
+The listing above uses dates that were obtained from the file dates on the
+running heads of each scanned file.
+
+Since the collection as a whole did not identify a specific date, I
+have chosen to identify the date of this source listing as
+corresponding to the most recent of its file dates
+(oz:<kmp.kea.source>basic.lisp.48, 28 September 1984).
+
+Caveats About Licensing
+
+This source listing was prepared for use with Symbolics Lisp Machine
+Release 4.5. Some files may contain code fragments, patches, or
+interface assumptions specific to the Symbolics Lisp Machine system
+environment, including components such as Zwei and Converse.
+
+Note: The historical legal notice did not address any potential
+license issues relating to the Lisp Machine system environment on
+which the associated code depended.  In creating this historical
+archive, no attempt has been made to revisit that matter. The notice
+is simply reproduced as originally written.
+
+Photo
+
+There is an accompanying photo of this artifact from before it was scanned
+and marked for recycling. Look for a file with '.photo.' in its name.
+
+ -kmp (Kent M. Pitman) 22-Jun-2026
