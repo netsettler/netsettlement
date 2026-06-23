@@ -1,0 +1,2 @@
+In making this image, I used Primary Assistant Model = GPT-5.5, Image Gen Model = GPT Image 2, and Vision/Analysis Model = GPT-5.5 at abacus.ai.
+Other variations of this image in this same set were adjustments made by Kent Pitman using GIMP (https://gimp.org)
