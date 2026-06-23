@@ -5,6 +5,11 @@
 
 A place for bits of history from when the net was still getting settled. 
 
+## Forking
+
+**Because of complex issues involving intellectual property rights,
+I strongly request that you do _not_ fork this repository.**
+
 ## About Kent's Archiving Project
 
 Moving to a new home, I found I did not have storage space for
