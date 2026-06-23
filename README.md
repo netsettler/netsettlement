@@ -1,3 +1,6 @@
+![Scanning in progress](Artifacts/Scanning-In-Progress.transparent.png)  
+**This is active WORK IN PROGRESS (as of 22 Jun 2026).**
+
 # netsettlement
 
 A place for bits of history from when the net was still getting settled. 
@@ -56,7 +59,7 @@ are some reasonable assumptions.
   to judge in isolation, but if I've put something up here at all, it
   means I don't think it's likely to make a dent in someone's business.
   
-  **If you think you are the rightful copyright holder of
+  **If you think you are the rightful holder of copyright on
   any of this material and want me to clarify metadata, remove it,
   or otherwise establish an appropriate disposition, feel free to 
   [contact me](https://nhplace.com/kent/contact-kent.html).**
@@ -142,8 +145,8 @@ to be unrelated to the license itself. If in doubt, look for the
 yourself that the appropriate semantic information has been preserved.
 
 Note that although we show `LICENSES/` here as a relative reference,
-there is only one such directory and it is relative to the repository root,
-there are no `LICENSES/` subdirectories elsewhere in this repository.
+there is only one such directory, and it is relative to the repository root.
+There are no `LICENSES/` subdirectories elsewhere in this repository.
 
 ### Sticky Notes and Metadata Insert Pages
 
@@ -167,7 +170,7 @@ space to save the entire document. In some cases, too, it was expedient
 just to add an explanatory page at the beginning of the scan because
 at the time I had not yet evolved the idea that there might be a
 companion 'sidecar' file that could contain such data. Those situations
-might get later repaired, since the scanned pdf can be pried apart and the
+might get later repaired, since the scanned PDF can be pried apart and the
 metadata page could be peeled out and separated. But the plan is not to do
 that kind of thing until after things are in source control so that the
 doing of it is tracked.
@@ -239,6 +242,6 @@ feel free to
 
 * [Internet Archive](https://archive.org)
 
-* [REUSE Specificaton](https://reuse.software/spec-3.3/) (version 3.3)
+* [REUSE Specification](https://reuse.software/spec-3.3/) (version 3.3)
 
 * [U.S. Copyright Office Fair Use Index](https://www.copyright.gov/fair-use/)
