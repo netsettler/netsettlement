@@ -106,7 +106,14 @@ going to tell you most of what you need to know, even though in most
 cases I have textually signed and dated the comment within the file
 as well.
 
-### `.photo.`_n_`.`_date_`.jpg` files (and similar image formats)
+### `.manifest.txt` files
+
+These files could have been part of the `metadata.txt` files, but in some
+cases separating this info out seemed useful. Where they exist, they 
+contain an accounting of what files exist in a bundle, that is, when
+the pdf is acting as a kind of poor man's `.tar` or `.zip` file.
+
+### `.photo.`_seqid_`.`_date_`.jpg` files (and similar image formats)
 
 An original physical artifact that a file _X_ was created from might
 have been photographed for the historical record. For example, a
@@ -114,6 +121,13 @@ hypothetical artifact `foo` that was scanned to create a `foo.pdf`
 might have a `foo.pdf.photo.1.2026-01-01.jpg` associated with it that
 contains a photo of the (hypothetical) physical artifact we're here
 calling `foo`.
+
+The _seqid_ is usually a number in case there are more than one
+such photos, which occasionally happened. But don't assume it is strictly
+a number. Sometimes there are tokens like "1a" for variations on a photo
+due to cropping or scaling, as an example. No precise semantics is
+claimed. It's just a token to help keep things straight where the
+other parts of the name would otherwise collide.
 
 There might also be similar files with other image formats, such as
 `.gif`, `.png`, `.tiff`, etc.  If you're searching for files of this
