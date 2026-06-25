@@ -5,10 +5,26 @@
 
 A place for bits of history from when the net was still getting settled. 
 
-## Forking
+## Important Notes
+
+### Forking
 
 **Because of complex issues involving intellectual property rights,
 I strongly request that you do _not_ fork this repository.**
+
+### Cloning
+
+If you're disk-space sensitive, I recommend browsing on the Github
+site rather than cloning the repo. It's not huge yet, but it might be
+once done.  You might resent the disk space and only want individual
+files, if any.  There is no intended prohibition on cloning, only
+forking. It's just a courtesy to you that I mention the size
+issue. Use your own judgment on that.
+
+If you do take individual files, consider taking their sidecar files
+as well. Or at least reading them. They may contain important
+technical or legal or contextual information. Make sure you have read
+this `README.md` document in full as well, for the same reasons.
 
 ## About Kent's Archiving Project
 
@@ -90,8 +106,10 @@ Even historical preservation is a part of life and has its own organic,
 evolving, and sometimes idiosyncratic processes that sometimes have
 to be understood. Hopefully the information in this section will help.
 
-As part of placing the artifact in this repository, metadata may have
-been added in several specific ways:
+As part of placing the artifact in this repository, metadata may (or
+may not) have been added in several specific ways. Additional metadata
+might evolve over time. I'm going to try to hold the artifact files
+constant.
 
 ### `.metadata.txt` files
 
@@ -113,7 +131,7 @@ cases separating this info out seemed useful. Where they exist, they
 contain an accounting of what files exist in a bundle, that is, when
 the pdf is acting as a kind of poor man's `.tar` or `.zip` file.
 
-### `.photo.`_seqid_`.`_date_`.jpg` files (and similar image formats)
+### `.photo.`_id_`.`_date_`.jpg` files (and similar image formats)
 
 An original physical artifact that a file _X_ was created from might
 have been photographed for the historical record. For example, a
@@ -122,11 +140,14 @@ might have a `foo.pdf.photo.1.2026-01-01.jpg` associated with it that
 contains a photo of the (hypothetical) physical artifact we're here
 calling `foo`.
 
-The _seqid_ is usually a number in case there are more than one
-such photos, which occasionally happened. But don't assume it is strictly
-a number. Sometimes there are tokens like "1a" for variations on a photo
-due to cropping or scaling, as an example. No precise semantics is
-claimed. It's just a token to help keep things straight where the
+The _id_ is usually a number in case there are more than one such
+photos, which occasionally happened. But don't assume it is strictly a
+number, or that all numbers starting with 1 are supposed to be
+there. Sometimes there are tokens like "1a" for variations on a photo
+due to cropping or scaling, as an example. Other times there were just
+several similar photos 1, 2, and 3 I was deciding between and I may
+not have picked any of those ids. No precise semantics is claimed.
+It's just an extra id token to help keep things straight where the
 other parts of the name would otherwise collide.
 
 There might also be similar files with other image formats, such as
@@ -200,7 +221,14 @@ file, but there could be places where I overlook that, so please
 report discrepancies where it seems like I didn't, and I'll try to fix
 that.
 
-## Notes about Scan Quality
+## Notes about Scanned Files (PDFs)
+
+The scan dates are recent but the filenames are old. Do not rely on the file dates
+in the git repository. The scanned files contain date information, but sometimes it
+is easier to find in `.metadata.txt` or `.manifest.txt` files where they exist.
+
+As of the initial creation of this repo, no OCR work has been done. My scanner does
+not do it automatically, so these are just images of pages for now.
 
 I have mostly scanned things at [300 DPI](https://en.wikipedia.org/wiki/Dots_per_inch)
 since I think that was the maximum
