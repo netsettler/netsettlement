@@ -13,7 +13,7 @@ Most text files and images are modern metadata.
 **Because of complex issues involving intellectual property rights,
 I strongly request that you do _not_ fork this repository.**
 
-## Cloning OK, but please note...
+## Cloning Probably OK, but please note...
 
 If you're disk-space sensitive, I recommend browsing on the Github
 site rather than cloning the repo. It's maybe not huge yet, but it
@@ -26,6 +26,12 @@ If you do take individual files, consider taking their sidecar files
 as well. Or at least reading them. They may contain important
 technical or legal or contextual information. Make sure you have read
 this `README.md` document in full as well, for the same reasons.
+
+**There may still be complex intellectual property issues involved
+in you making a clone. I can neither advise you nor
+give you formal permission.** But at least the cloning mechanism,
+allows me to later issue adjustments to the record that you'll still
+be configured to receive.
 
 ## About Kent's Archiving Project
 
