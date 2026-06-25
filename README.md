@@ -1,25 +1,26 @@
 ![Scanning in progress](Artifacts/Scanning-In-Progress.transparent.300x268.png)  
-**This is active WORK IN PROGRESS (as of 22 Jun 2026).**
+**This is active WORK IN PROGRESS (as of 25 Jun 2026).**
 
 # netsettlement
 
-A place for bits of history from when the net was still getting settled. 
+A place for bits of history from when the net was still getting settled.
 
-## Important Notes
+Mostly PDFS of historical artifacts.  
+Most text files and images are modern metadata.
 
-### Forking
+## No Forking, please...
 
 **Because of complex issues involving intellectual property rights,
 I strongly request that you do _not_ fork this repository.**
 
-### Cloning
+## Cloning OK, but please note...
 
 If you're disk-space sensitive, I recommend browsing on the Github
-site rather than cloning the repo. It's not huge yet, but it might be
-once done.  You might resent the disk space and only want individual
-files, if any.  There is no intended prohibition on cloning, only
-forking. It's just a courtesy to you that I mention the size
-issue. Use your own judgment on that.
+site rather than cloning the repo. It's maybe not huge yet, but it
+might be once it's done.  You might resent the disk space and only
+want individual files, if any.  There is no intended prohibition on
+cloning, only forking. It's just a courtesy to you that I mention the
+size issue. Use your own judgment on that.
 
 If you do take individual files, consider taking their sidecar files
 as well. Or at least reading them. They may contain important
