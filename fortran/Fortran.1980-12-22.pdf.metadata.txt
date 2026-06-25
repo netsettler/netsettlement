@@ -1,0 +1,17 @@
+Kent Pitman's Fortran-to-Lisp translator (1980-12-22, unknown version greater than 213)
+
+Notes: 
+
+* The specific Fortran version that this corresponds to is not easy to
+  discern because it would have been the specific version of a file
+  created when a translator is dumped, and that file was not backed up
+  as part of this bundle. For this reason, I have chosen to use dates
+  ahead of version numbers in the filename, so that sorting by these dates
+  will put the versions in the right order.
+
+ * Before disposing of the hardcopy form of this data,
+   I hand-checked that all individual hardcopy pages
+   are reproduced here in the PDF scan, and in the
+   same order.
+
+ -kmp 5-Jun-2026

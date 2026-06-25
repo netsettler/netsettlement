@@ -1,0 +1,14 @@
+I've hand-checked that all the hardcopy pages are reproduced here and
+in the right order. (In fact, there was a duplicated page, so I
+re-issued the scan with one fewer pages as .fixed.pdf.)
+
+Also, this document, when bound, said Feb 1980 on its spine, but it
+contains documents from as late as June 10, 1980 and at least some of
+the files were printed June 27, 1980, so I conclude that this document
+is better sesen as a June 1980 document.
+
+It also contains a User's Guide that is not dated, but that I assume
+is contemporaneous with the rest of this, so probably current as of
+June 1980.
+
+ -kmp 4-Jun-2026

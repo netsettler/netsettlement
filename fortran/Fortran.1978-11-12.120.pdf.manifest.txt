@@ -1,0 +1,28 @@
+Blue Cloth Loose-Leaf Notebook (early Fortran->Lisp translator, latest date 1978-11-12)
+
+MC: TNP;
+  DRIVER 2      1978-03-03 20:50:37 KMP
+ML: COMMON;
+  KMP    EQUIV  1978-05-06 01:21:57 KMP (missing cover)
+MC: TNP;
+  FORT   CAPAB  1978-02-06 02:37:29 KMP
+  FORT   SYNTAX 1978-02-19 15:18:54 KMP
+  FORMAT 1      1977-05-04 02:33:33 KMP
+  FORMA0 1      1978-03-22 16:27:04 KMP
+  FORTRA 10     1978-06-09 04:22:02 KMP (half file, pp1-7)
+  FORTRA 15     1978-06-09 05:38:15 KMP (half file, pp8-14.1)
+  PARSE  97     1978-05-11 11:06:32 KMP
+  TRANS  208    1978-06-09 15:58:54 KMP
+ML: COMMON;
+  KMP    UTIL   1978-05-21 05:17:10 KMP
+MC: TNP;
+  MACRO1 2      1978-11-12 10:28:23 KMP
+  MACRO2 5      1978-11-12 11:27:40 KMP
+
+The half-file FORTRA 10 identifies the version number. Probably the start of
+FORTRA 15 would be a different number. But close enough. :)
+
+filename uncertain, title "FORTRAN BUILT-IN SUBROUTINE LIBRARY" (1978-11-09)
+describes, as the title says, the interfaces for various
+Fortran library built-ins. [Same as BILTIN > in later documents,
+though version unkonwn]

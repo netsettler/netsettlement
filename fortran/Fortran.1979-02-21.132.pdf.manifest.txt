@@ -1,0 +1,8 @@
+Velobound FORT 132 (21 FEB 78)
+                                            Pages 
+                                       Section  Total
+MC: TNP;
+  FORT   132    1979-02-21 16:25:41 KMP     40   40
+  UTIL   379    1979-02-21 16:27:42 KMP     31   71
+  XPARSE 36     1979-02-17 06:28:48 KMP     29  100
+  XTRANS 145    1979-02-21 15:16:25 KMP     32  132

@@ -1,0 +1,4 @@
+This is a redundant copy of the User's Guide
+that appears at the end of Fortran.1980-06-27.213.pdf
+ -kmp 5-Jun-2026
+ 

@@ -1,0 +1,6 @@
+Note that because this bundle is looseleaf, it's not surprising that
+it contains files that were added and removed over time. It's not
+really a collection that was created as something intended to be a
+specific bundle. I wouldn't expect these to function coherently.
+
+ -kmp 25-Jun-2026

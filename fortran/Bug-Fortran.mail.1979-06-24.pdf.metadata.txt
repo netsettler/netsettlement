@@ -1,0 +1,39 @@
+This is the contents of MC: TNP; FORTRA BUGS, the bug archive for
+Kent Pitman's Fortran-to-Lisp translator, specifically mail sent
+during the interval 1978-02-19 to 1979-06-24.
+
+I included this partly because it was there in my records and seemed
+valuable. Plus I did not have a better place to put it. But it also
+makes sense that it goes with these other things. It hints at matters
+that go beyond the static nature of these code listings taken on
+somewhat randomly chosen days, probably more forced by a need to prune
+disk space than anything else. Still, the end result is to give a
+window into the ways that programs were used, grumbled about, and
+revised over time. I hope it conveys a sense of the day-to-day
+business of programming in that era. And maybe if you're now playing
+with some old version that seems buggy, you might find a fix there--or
+at least some information to help you understand the problem better.
+
+Notes:
+
+ * The addresses BUG-FORTRAN and (BUG FORTRAN)
+   are synonyms.
+
+ * The host names MC and MIT-MC are synonyms.
+   These are ARPANET addresses, as the Internet
+   did not yet exist. There are no dots in their
+   names.
+
+ * These email exchanges were sent, received, and stored
+   on a file system that was entirely public and visible
+   to the entire net (ARPANET) at the time, so I'm assuming 
+   no special additional permissions are required for me 
+   to make this same information again visible to the
+   entire net (Internet) now.
+
+ * Before disposing of the hardcopy form of this data,
+   I hand-checked that all individual hardcopy pages
+   are reproduced here in the PDF scan, and in the
+   same order.
+
+ -kmp 5-Jun-2026

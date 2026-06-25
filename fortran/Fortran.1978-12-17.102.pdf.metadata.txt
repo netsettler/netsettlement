@@ -1,0 +1,18 @@
+I manually checked that all hardcopy pages are present and in the
+right order in the scan.
+
+That said, please note that a page (page 1, in particular) is missing
+from the scan of the file 'SWITCH DFAULT'. This was not due to a flaw
+in the scanning process but rather was because that page is missing in
+the hardcopy, too.  Alas, of the several archived source listings I
+have, I don't see another that has any copy (complete or not) of a
+file by this name, so it can't be reconstructed in that
+way. Fortunately, it's not a code file.
+
+Also note that there some files in the middle of this that are not
+code files, but things like bug reports. See 'FORTRA *' in the manifest
+(i.e., 'FORTRA BUGS', 'FORTRA MAIL', and 'FORTRA NOTES').
+
+ -kmp 25-Jun-2026
+
+ 

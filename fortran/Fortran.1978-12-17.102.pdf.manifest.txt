@@ -1,0 +1,39 @@
+Velobound Fortran -> Lisp Translator (Fortran.102) 17 DEC 78 KMP
+
+                                              Pages 
+                                       Section    Total
+Cover                                        1    1
+
+MC: TNP;                                   
+  BILTIN 3      1978-11-09 14:17:47 TNP      5    6
+  BNF    TJ6    1978-11-12 13:41:28 TNP      3    9
+  DECLS  11     1978-12-09 22:56:48 TNP      3   12
+  FDUMP  2      1978-12-08 15:40:52 TNP      3   15
+  FORT   102    1978-12-08 15:52:21 TNP     26   41
+  FORTRA BUGS   1978-12-10 19:13:10 TNP     13   54
+  FORTRA MAIL   1978-11-08 23:58:46 TNP      2   56
+  FORTRA NOTES  1978-05-26 07:48:44 TNP      8   64
+  HOLRTH 3      1978-10-21 16:32:57 TNP      3   67
+  I/O    INFO   1978-03-27 17:01:53 TNP      2   69
+  I/O    NEW    1978-05-01 16:33:21 TNP      8   77
+  I/O    OLD    1978-05-04 02:33:33 TNP      4   81
+  INFO   CAPAB  1978-12-10 16:56:54 TNP      2   83
+  INFO   DFAULT 1978-12-10 17:01:12 TNP      2   85
+  INFO   JCL    1978-12-10 16:57:24 TNP      5   90
+  INFO   SYNTAX 1978-12-10 16:58:49 TNP      6   96
+  IOTA   4      1978-11-23 20:24:09 TNP      4  100
+  MACRO1 4      1978-12-03 18:28:09 KMP      4  104
+  MACRO2 38     1978-12-04 02:48:24 KMP     12  116
+  MACRO3 3      1978-12-03 18:28:03 KMP      5  121
+  PP     100    1978-06-24 11:57:42 TNP      6  127
+  SIMP   5      1978-07-01 22:01:44 TNP      4  131
+  SUBR   41     1978-11-15 11:15:53 TNP      5  136
+  SWITCH 6      1978-12-09 21:31:12 TNP      6  142
+  SWITCH DFAULT 1978-12-10 17:00:44 TNP     10  152
+  UTIL   350    1978-12-09 23:04:15 TNP     39  191
+  XMACRO 6      1978-12-09 17:24:23 KMP      4  195
+  XPARSE 26     1978-12-10 19:39:53 TNP     29  224
+  XTRANS 111    1978-12-10 19:39:32 TNP     22  246
+
+Note that file SWITCH DFAULT is missing page 1.
+It was missing in the hardcopy, too.
