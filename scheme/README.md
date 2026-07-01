@@ -43,7 +43,7 @@ There are some handwritten notes at the end of this. They seemed like maybe
 part of the same thing, but maybe not. There is one file that is half printed
 and has some similar scribbling.
 
-### `t-yale-*.pdf```
+### `t-yale-*.pdf`
 
 Some files related to Yale Scheme, perhaps from about 1986 sometime, based
 on the content of the announcement file.
