@@ -1,0 +1,18 @@
+# Context
+
+Why was this file (or series of files, really) created? Some contextual
+metadata is in the `README.md`.
+
+Specific to the particular file that got scanned here:
+
+I'm actually not sure what "EI" stood for contemporaneously. Probably
+"error interface" or "error integration", but I don't know. (It's also
+possible that "EH" is just the logically next pair of letters after
+"EH".) I chose the "error integration" interpretation as the base name
+for this scanned file, just to give it definitive after-the-fact
+meaning, but that decision is a 2026 choice, not a choice of the era
+this data comes from.
+
+ -kmp 19-Jun-2026
+
+

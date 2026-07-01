@@ -1,5 +1,46 @@
+# ======================================================================
+# These are places I'm putting things in my personal hierarchy that
+# I don't want to check into the repo.
+
+# This is things like .xcf files for some photos that I used for
+# cropping/scaling in GIMP. It also includes alternate photos that
+# I didn't use. And sometimes there is meta-meta-data like to-do
+# lists for things I need do for curation.
+
 ARTIFACTS/
+
+# This is for things that have not yet been checked in but might want to be.
+# The idea is to sometimes move stuff down into such a folder so that git
+# isn't constantly reminding me there's more to do.
+
+PENDING/
+
+# This is for things like alternate scans or, importantly, the original
+# scans before I compressed the scans using ghostscript, just in case
+# we later find that compression did damage, so that we can recover at
+# least some of the originals.
+
 ARCHIVE/
+
+# Some files have personal information that I didn't see as
+# historically important and that seemed better to omit. Typically
+# this was done by physically masking the document (adding a piece
+# of occluding cardboard with Scotch tape before scanning) and then
+# using the flatbed scanner.
+#
+# In a few cases, I also made a scan that did not have this masking,
+# and in such cases, I added an embedded extension .UNREDACTED
+# (such as, but not limited to, something.UNREDACTED.pdf)
+# since I don't want to check them in.
+#
+# This pattern is slightly more general than the convention I used
+# since it's unlikely to occur for any other reason, and this will
+# catch accidental uses of hyphen, typos using comma instead of dot,
+# or variations where the token occurs at the end of a filename.
+
+*UNREDACTED*
+
+# ======================================================================
 
 # MacOS folder meta-info
 .DS_Store

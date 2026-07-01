@@ -195,6 +195,19 @@ Note that although we show `LICENSES/` here as a relative reference,
 there is only one such directory, and it is relative to the repository root.
 There are no `LICENSES/` subdirectories elsewhere in this repository.
 
+### `README.md` files
+
+Locally to any of the directories in this repository, there may be a
+more specific `README.md` than the one you are reading now. You can safely
+assume that these are metadata files, not actual historical artifacts,
+since "markdown" was invented long after most of these files I'm archiving.
+
+If I later find a case where it's not metadata and is an actual
+artifact, watch for a `README.md.metadata.txt` to identify that
+fact. But I don't expect the need to come up. I just didn't want you
+to be up nights thinking the decision to make a broad claim in advance
+about all `README.md` files in this repo had painted me into a corner.
+
 ### Sticky Notes and Metadata Insert Pages
 
 "Well", I can hear you say, "these are scans. Sticky notes cannot be

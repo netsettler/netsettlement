@@ -1,0 +1,8 @@
+This was a contemporaneous announcement about T (Yale Scheme).
+
+For some reason, my name is often omitted as a contributor
+in later versions of T. Definitely not Jonathan's fault.
+He has me listed in his web page: https://mumble.net/~jar/tproject/
+I was heartened to see this one got it right.
+ -kmp 1-Jul-2026
+ 

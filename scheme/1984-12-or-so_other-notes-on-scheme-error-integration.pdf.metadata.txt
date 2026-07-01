@@ -1,0 +1,5 @@
+There are both electronic and hand-written notes here.  It's kind of a
+jumble. It relates to the other notes-on-scheme-error-integration
+stuff in this same general timeframe. But exactly how I didn't take the
+trouble to sort out.
+ -kmp 29-Jun-2026
