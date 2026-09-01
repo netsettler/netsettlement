@@ -2,8 +2,8 @@
 
 These files are not all part of a single collection. There are some
 that are related, but I'll add some metadata here that spans
-multiple files and isn't appropriate to one specific file.
-&emsp;&mdash;_Kent Pitman, 1-Jul-2026
+multiple files and isn't appropriate to one specific file.\
+&emsp;&mdash;_Kent Pitman, 1-Jul-2026_
 
 ## About individual files
 
