@@ -1,4 +1,4 @@
-![Scanning in progress](Artifacts/Scanning-In-Progress.transparent.300x268.png)  
+![Scanning in progress](PublicArtifacts/Scanning-In-Progress.transparent.300x268.png)  
 **This is active WORK IN PROGRESS (as of 25 Jun 2026).**
 
 # netsettlement
