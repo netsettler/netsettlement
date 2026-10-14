@@ -149,7 +149,7 @@ If you need something sooner,
 In a surprising coincidence, [Jeff Shrager](https://github.com/jeffshrager) recently contacted me
 to inquire if I had sources to this program, which I scanned just weeks before into PDF.
 In a matter of hours, I was able to get him what he needed and he proceeded ahead on a restoration
-project of his own. With the help of an LLM (specifically, Claude Opus 5.5), Jeff
+project of his own. With the help of an LLM ([specifically Claude Opus 5.5](https://github.com/jeffshrager/kbemacs/commit/b86d85a73c902fff58465d2519ad3d6511b32939)), Jeff
 got the sources OCR'd and a headless version of this system running in
 [Steel Bank Common Lisp (SBCL)](https://www.sbcl.org/)&mdash;enough to run some examples. (Thanks, Jeff!)
 
