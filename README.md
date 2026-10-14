@@ -208,6 +208,23 @@ fact. But I don't expect the need to come up. I just didn't want you
 to be up nights thinking the decision to make a broad claim in advance
 about all `README.md` files in this repo had painted me into a corner.
 
+### `RESTORATIONS/` subdirs
+
+Folders with this name are where you might find links (as submodules) to work
+by others, such as OCR efforts or attempts to get working versions of code going.
+That's beyond the scope of this repository, so is only loosely linked here.
+Usually the `README.md` in the same directory as the `RESTORATIONS/` folder is
+expected to provide additional information.
+
+Note that when you do a plain `git clone ...`, submodule directories will be empty.
+You will need to either use this to check things out:
+
+    git clone --recurse-submodules ...
+
+or else repair the checkout later with:
+
+    git submodule update --init
+
 ### Sticky Notes and Metadata Insert Pages
 
 "Well", I can hear you say, "these are scans. Sticky notes cannot be

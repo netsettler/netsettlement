@@ -134,18 +134,50 @@ Sorry the photo of volume 4 is so fuzzy. I didn't notice until too late.
 
 ### Scan Resolution
 
-I have higher resolution scan pages available to anyone who wants to do an OCR,
-***however***, [such an attempt](https://github.com/jeffshrager/kbemacs)
-has already been made at the time of this release.
-I'm coordinating with [Jeff Shrager](https://github.com/jeffshrager) about formally linking 
-that effort as a submodule in this repository, and will update this documentation when that's done.
-    
+I have higher resolution scan pages available upon request to anyone who wants to do an OCR
+with those instead of what's checked in here.
+
 In general, though,
-I've not provided high resolution pages because I've tried to keep the size of this repository in check
+I've not provided high resolution pages here because I've tried to keep the size of this repository in check
 so that casual browsing, which is what I expect most people will do, doesn't consume too much disk space.
 I'll probably release a separate directory with the higher quality scans at another time.
 If you need something sooner,
 [contact me](https://nhplace.com/kent/contact-kent.html).
+
+#### Jeff Shrager's KBEmacs restoration effort
+
+In a surprising coincidence, [Jeff Shrager](https://github.com/jeffshrager) recently contacted me
+to inquire if I had sources to this program, which I scanned just weeks before into PDF.
+In a matter of hours, I was able to get him what he needed and he proceeded ahead on a restoration
+project of his own. With the help of an LLM (specifically, Claude Opus 5.5), Jeff
+got the sources OCR'd and a headless version of this system running in
+[Steel Bank Common Lisp (SBCL)](https://www.sbcl.org/)&mdash;enough to run some examples. (Thanks, Jeff!)
+
+So if you're wanting to do your own experimentation, you might be able to start from what he's done.
+
+Various tags in Jeff's repo are available here as
+git submodules at [`RESTORATIONS/JeffShrager/`](RESTORATIONS/JeffShrager/).
+Individual tags represent the state of his work at particularly named times
+corresponding to tags in [his kbemacs repo](https://github.com/jeffshrager/kbemacs),
+such as
+[initial_OCR_unchecked](RESTORATIONS/JeffShrager/initial_OCR_unchecked/)
+and
+[headless_SQRT_functional](RESTORATIONS/JeffShrager/headless_SQRT_functional/).
+
+Note that when you do a plain `git clone ...`, the submodule directories will be empty.
+You will need to either use this to check things out:
+
+    git clone --recurse-submodules ...
+
+or else repair the checkout later with:
+
+    git submodule update --init
+
+Note that I have linked these tags in Jeff's repo for historical reasons here,
+but if you have ongoing interest in developing something, I recommend just 
+separately cloning his repo and working with him directly,
+as the function of this repo is primarily to be a historical snapshot.
+I don't plan to track ongoing development.
 
 ## References
 

@@ -1,0 +1,6 @@
+[submodule "kbe/RESTORATIONS/JeffShrager/initial_OCR_unchecked"]
+	path = kbe/RESTORATIONS/JeffShrager/initial_OCR_unchecked
+	url = https://github.com/jeffshrager/kbemacs
+[submodule "kbe/RESTORATIONS/JeffShrager/headless_SQRT_functional"]
+	path = kbe/RESTORATIONS/JeffShrager/headless_SQRT_functional
+	url = https://github.com/jeffshrager/kbemacs
