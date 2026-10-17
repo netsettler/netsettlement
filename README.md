@@ -1,5 +1,5 @@
 ![Scanning in progress](PublicArtifacts/Scanning-In-Progress.transparent.300x268.png)  
-**This is active WORK IN PROGRESS (as of 25 Jun 2026).**
+**This is active WORK IN PROGRESS (as of 17 Oct 2026).**
 
 # netsettlement
 
@@ -207,6 +207,32 @@ artifact, watch for a `README.md.metadata.txt` to identify that
 fact. But I don't expect the need to come up. I just didn't want you
 to be up nights thinking the decision to make a broad claim in advance
 about all `README.md` files in this repo had painted me into a corner.
+
+### `WAYBACK.md` files
+
+For some file hierarchies, archival copies of things I had were found
+to already exist on [the Wayback Machine at archive.org](https://archive.org).
+In that case, I may have mirrored a part of the Wayback Machine's directory
+structure in this repo to make browsing easier. This compensates for the fact
+that access to the Wayback Machine is often slow,
+and for other more idiosyncratic issues.
+See
+[`symbolics/lagout_museum/README.md`](symbolics/lagout_museum/README.md)
+for more details on the mirrored tree that starts at
+[`symbolics/lagout_museum/WAYBACK.md`](symbolics/lagout_museum/WAYBACK.md),
+and why I chose to do this.
+But, basically, each remote directory on the Wayback Machine in such a
+case is be matched in the local mirror by a `WAYBACK.md` file.
+These files are the branch points of the mirrored tree.
+The leaf nodes, the actual files, are stored at the Wayback Machine itself.
+
+### Other `.md` files
+
+There are occasionally situations where I needed other .md files.
+Since the 'markdown' (`.md`) file type did not exist at the time that
+these historical artifacts were created, I don't think there should be
+any ambiguity about the fact that such files are recent. ANd their
+content will identify their nature.
 
 ### `RESTORATIONS/` subdirs
 
