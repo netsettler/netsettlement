@@ -1,0 +1,74 @@
+This document is listed in MIT's historical publication catalog, but I
+have not found a link to a copy there or a corresponding record in
+MIT's DSpace repository (dspace.mit.edu). ChatGPT (specifically,
+GPT-6) helped me locate the catalog entry, but we have not established
+whether a digital copy is available elsewhere through MIT.
+
+I have to say, the DSpace search tool is terrible and doesn't respond
+well to the most ordinary of queries, so the fact that I tried may not
+say much. I searched for this as many ways as I could think of--by
+title, by author, and by mixes of author, fragments of title, and
+date--and this document didn't come up.
+
+Oddly, Amazon claims to offer a copy of this, but it says it's out
+of stock and it doesn't know it will get more. I'm going to conclude
+from that that no one's meal ticket is depending on the revenue and
+that I'm not creating an economic problem for someone by just making
+sure history can find this at all.*
+
+I also see this title available other places. Academia has a 1986
+paper by Meyer with this title, for example. The practice of putting
+out new documents with the same name bugs me quite a lot. I get that
+people are trying to make sure people get the most recent, but the
+right way to do that cannot be historical revisionism. That makes a
+mess of citations.
+
+What follows is information I extracted from the associated paper to
+make search easier for people who have not opened the document.
+--Kent Pitman 19-Oct-2026
+
+
+* If a lawful owner of the material needs me to take it down,
+  they can contact me (https://nhplace.com/kent/contact-kent.html).
+  For that matter, if DSpace wants to take over the holding of this,
+  that would make sense. I just don't have time to learn everybody's
+  process for doing things like that, so someone other than me will
+  need to volunteer.
+
+------------------------------------------------------------------------------
+
+Title: ON TIME VERSUS SPACE III
+
+Authors: Albert R. Meyer
+         Daniel Weise
+         Michael C. Loui
+
+Publisher (from cover): LABORATORY FOR COMPUTER SCIENCE
+                        MASSACHUSETTS INSTITUTE OF TECHNOLOGY
+
+Publisher (from first page): MIT Laboratory for Computer Science
+                             545 Technology Square
+                             Cambridge, Massachusetts 02139
+
+Document Number: MIT/LCS/TM-175
+
+Publication Date (from cover): September 1980
+Publication Date (from first page): September 2, 1980
+
+Copyright Date: 1981
+Copyright Claimant: Massachusetts Institute of Technology
+
+Key Words and Phrases:
+
+  Pebble game, time/space tradeoffs, storage modification machines,
+  time complexity, space complexity.
+
+Abstract:
+
+  Paul and Reischuk devised space efficient simulations of logarithmic
+  cost random access machines and multidimensional Turing machines. We
+  simplify their general space reduction technique and extend it to
+  other models of computation, particularly to the class of storage
+  modification machines (SMM), a model of list processing. Every SMM
+  of time complexity t(n) can be simulated by an SMM of space
+  complexity t(n)/log t(n).
