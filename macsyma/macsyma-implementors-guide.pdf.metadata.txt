@@ -1,0 +1,30 @@
+This document is something I made while I was working for the Mathlab*
+group at MIT. That group is the one that maintained and developed Macsyma
+before it was spun off to Symbolics to take care of.
+
+I believe I am the original author of this document, though I don't
+think it was ever published anywhere. There might be others that have
+it or have circulated it.
+
+One of the reasons I'm reasonably sure this was my work is that it
+uses the same layout formats that The Revised Maclisp Manual does, and
+that manual used a specific tactic of a notation for specifying things
+in plain text and then a processor I wrote that translated the
+information to TeX notation and did the final typesetting with the tex
+program. But I called it at the time something like "a special purpose
+langauge for making Maclisp manuals" and wasn't sure it had hugely
+broader applicability, so I was pleased there were a couple of things
+like this that could reuse the tech.
+
+If I have the source code for this around, or for the processor, I
+don't know where or I'd be putting that up, too. But someone might
+still find some or all of this information still useful in work on
+either the closed-source/proprietary Symbolics MACSYMA tool or the
+open- source/GPL MAXIMA tool. Just a hunch, I'm afraid.
+
+ --Kent Pitman, 19-Oct-2026
+
+
+* No relation to Matlab, by the way (other than maybe that systems
+  doing math were shown to be possible to do at all by earlier systems
+  like Macsyma).
