@@ -6,7 +6,8 @@
 * [OPCODES.txt](https://web.archive.org/web/20231208085147/https://doc.lagout.org/science/0_Computer%20Science/0_Computer%20History/old-hardware/symbolics/patents/4887235/OPCODES.txt)
 * [STARTUP.txt](https://web.archive.org/web/20231208085147/https://doc.lagout.org/science/0_Computer%20Science/0_Computer%20History/old-hardware/symbolics/patents/4887235/STARTUP.txt)
 * [patent.html](https://web.archive.org/web/20231208085147/https://doc.lagout.org/science/0_Computer%20Science/0_Computer%20History/old-hardware/symbolics/patents/4887235/patent.html)
-* [script.sh](https://web.archive.org/web/20231208085147/https://doc.lagout.org/science/0_Computer%20Science/0_Computer%20History/old-hardware/symbolics/patents/4887235/script.sh)
+* [script.sh](https://web.archive.org/web/20231208085147/https://doc.lagout.org/science/0_Computer%20Science/0_Computer%20History/old-hardware/symbolics/patents/4887235/script.sh) (Click to download the remote copy.)<br />
+  [Click here to see a locally cached copy without downloading.](script.sh.wayback.txt)
 * [uspat-050.txt](https://web.archive.org/web/20231208085147/https://doc.lagout.org/science/0_Computer%20Science/0_Computer%20History/old-hardware/symbolics/patents/4887235/uspat-050.txt)
 * [uspat-060.txt](https://web.archive.org/web/20231208085147/https://doc.lagout.org/science/0_Computer%20Science/0_Computer%20History/old-hardware/symbolics/patents/4887235/uspat-060.txt)
 * [uspat-070.txt](https://web.archive.org/web/20231208085147/https://doc.lagout.org/science/0_Computer%20Science/0_Computer%20History/old-hardware/symbolics/patents/4887235/uspat-070.txt)

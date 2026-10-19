@@ -1,0 +1,304 @@
+#!/bin/bash
+
+#
+#
+#
+
+filter ()
+{
+    FILTER="4,887,235"
+    awk --source "/$FILTER/ { getline;next }; ! /$FILTER/" $1
+}
+
+out ()
+{
+    cat - >output/$1
+}
+
+append ()
+{
+    cat - >>output/$1
+}
+
+setstop ()
+{
+    stop="$1"
+    if [ "$stop" = "" ]; then
+      stop='xyzzy';
+    fi
+}
+
+# from-to including start, skipping end
+fromto ()
+{
+    setstop "$2"
+
+	awk --source "BEGIN { hit=0 }; \
+	/$1/ { hit=1; }; \
+	/$stop/ { hit=0; next }; \
+	{ if (hit) print \$0; }"
+}
+
+# from-to skipping ends
+fromskipto ()
+{
+    setstop "$2"
+
+	awk --source "BEGIN { hit=0 }; \
+	/$1/ { hit=1; next }; \
+	/$stop/ { hit=0; next }; \
+	{ if (hit) print \$0; }"
+}
+
+# from-to skipping ends
+fromskipto2nd ()
+{
+    setstop "$2"
+
+	awk --source "BEGIN { hit=0; }; \
+	/$1/ { hit=2; next; }; \
+	/$stop/ { hit=hit-1 } \
+	{ if (hit > 0) print \$0; }"
+}
+
+# from 2nd to skipping ends
+from2ndto ()
+{
+    setstop "$2"
+
+	awk --source "BEGIN { hit=0 }; \
+	/$1/ { hit++; next }; \
+	/$stop/ { hit=0; next }; \
+	{ if (hit > 1) print \$0; }"
+}
+
+# from 3rd to skipping ends
+from3rdto ()
+{
+    setstop "$2"
+
+	awk --source "BEGIN { hit=0 }; \
+	/$1/ { hit++; next }; \
+	/$stop/ { hit=0; next }; \
+	{ if (hit > 2) print \$0; }"
+}
+
+# from start down-to skipping end
+downto ()
+{
+	awk --source "BEGIN { hit=1 }; \
+	/$1/ { hit=0; next }; \
+	{ if (hit) print \$0; }"
+}
+
+# from start down-to skipping end
+downto2nd ()
+{
+	awk --source "BEGIN { hit=2 }; \
+	/$1/ { hit--; if (hit > 0) next }; \
+	{ if (hit) print \$0; }"
+}
+
+#
+D1='F:>lmach>ucode>BETTER-SPRINTER.LISP'
+D2='F:>lmach>ucode>check.lisp'
+filter uspat-050.txt | fromskipto $D1 $D2	| out better-sprinter.lisp.17
+filter uspat-050.txt | fromskipto $D2 ''	| out check.lisp.116
+#
+D1='F:>Lmach>ucode>FAKE-ARRAY.LISP.14'
+D2='; -\*- Mode:Lisp;'
+D3=';;; -\*- Mode:LISP;'
+D4=';-\*- Mode:LISP;'
+filter uspat-060.txt | downto $D1		| append check.lisp.116
+filter uspat-060.txt | fromskipto2nd $D1 "$D2" 	| out fake-array.lisp.14
+filter uspat-060.txt | from2ndto "$D2" "$D3"	| out maksys.lisp
+filter uspat-060.txt | fromto "$D3" "$D4"	| out pal.lisp
+#
+D1=';;; -\*- Mode:Lisp;'
+D2=';;; -\*- Mode:Lisp;'
+filter uspat-070.txt | downto2nd "$D1" 		| out sim.lisp
+filter uspat-070.txt | from2ndto "$D2" '' 	| out simx.lisp
+#
+D1='F:>lmach>ucode>ua.lisp.140'
+D2='F:>lmach>ucode>UDCLS.LISP.22'
+D3='F:>lmach>ucode>uh.lisp.126'
+filter uspat-080.txt | downto $D1		| append simx.lisp
+filter uspat-080.txt | fromskipto $D1 $D2 	| out ua.lisp.140
+filter uspat-080.txt | fromskipto $D2 $D3 	| out udcls.lisp.22
+filter uspat-080.txt | fromskipto $D3 ''	| out uh.lisp.126
+#
+filter uspat-090.txt 				| append uh.lisp.126
+#
+D1='F:>LMACH>Ucode>SYSDCL.LISP.64'
+filter uspat-100.txt | downto $D1		| append uh.lisp.126
+filter uspat-100.txt | fromskipto $D1 ''	| out sysdcl.lisp.64
+#
+D1='F:>lmach>ucode>ZWEI.LISP.2'
+D2='F:>lmach>ucode>uux.lisp.8'
+D3='F:>lmach>ucode>uu.lisp.429'
+filter uspat-110.txt | downto $D1		| append sysdcl.lisp.64
+filter uspat-110.txt | fromskipto $D1 $D2 	| out zwei.lisp.2
+filter uspat-110.txt | fromskipto $D2 $D3 	| out uux.lisp.8
+filter uspat-110.txt | fromskipto $D3 ''	| out uu.lisp.429
+#
+D1='F:>LMach>Ucode>NET.LISP.71'
+filter uspat-120.txt | downto $D1		| append uu.lisp.429
+filter uspat-120.txt | fromskipto $D1 '' 	| out net.lisp.71
+#
+D1=';;; Sequencer special functions'
+#filter uspat-130.txt  				| append net.lisp.71
+filter uspat-130.txt | downto "$D1"		| append net.lisp.71
+filter uspat-130.txt | fromto "$D1" ''		| append uu.lisp.429
+#
+#
+D1='F:>lmach>ucode>uu.lisp.429'
+D2='F:>lmach>ucode>UL.LISP.167'
+#filter uspat-140.txt | downto $D1 		| append net.lisp.71
+filter uspat-140.txt | downto $D1 		| append uu.lisp.429
+filter uspat-140.txt | fromskipto $D1 $D2	| append uu.lisp.429
+filter uspat-140.txt | fromskipto $D2 '' 	| out ul.lisp.167
+#
+D1='F:>lmach>ucode>trap.lisp.8'
+D2='F:>lmach>ucode>SYM.LISP.7'
+D3=';;; -\*- Mode:Lisp;'
+filter uspat-150.txt | downto $D1		| append ul.lisp.167
+filter uspat-150.txt | fromskipto $D1 $D2	| out trap.lisp.8
+filter uspat-150.txt | fromskipto $D2 "$D3" 	| out sym.lisp.7
+filter uspat-150.txt | from3rdto "$D3" ''	| out subprim.lisp.321
+#
+D1='F:>lmach>ucode>stack-buffer.lisp.67'
+D2='F:>lmach>ucode>sg.lisp.41'
+D3='F:>lmach>ucode>proto-trap.lisp.1'
+D4='F:>lmach>ucode>PREDICATE.LISP.14'
+filter uspat-160.txt | downto $D1		| append subprim.lisp.321
+filter uspat-160.txt | fromskipto $D1 $D2 	| out stack-buffer.lisp.67
+filter uspat-160.txt | fromskipto $D2 $D3 	| out sg.lisp.41
+filter uspat-160.txt | fromskipto $D3 $D4 	| out proto-trap.lisp.1
+filter uspat-160.txt | fromskipto $D4 ''	| out predicate.lisp.14
+#
+D1='F:>LMach>Ucode>NET.LISP.71'
+D2='F:>lmach>ucode>nBITBLT.LISP.22'
+filter uspat-170.txt | downto $D1		| append predicate.lisp.14
+filter uspat-170.txt | fromskipto $D1 $D2	| append net.lisp.71
+filter uspat-170.txt | fromskipto $D2 ''	| out nbitblt.lisp.22
+#
+filter uspat-180.txt				| append nbitblt.lisp.22
+#
+D1='F:>lmach>ucode>multiply.lisp.32'
+D2='F:>lmach>ucode>map.lisp.29'
+filter uspat-190.txt | downto $D1		| append nbitblt.lisp.22
+filter uspat-190.txt | fromskipto $D1 $D2	| out multiply.lisp.32
+filter uspat-190.txt | fromskipto $D2 ''	| out map.lisp.29
+#
+D1='F:>lmach>ucode>IFU.LISP.55'
+D2='F:>lmach>ucode>funcall3.lisp.61'
+D3=';;; -\*- Mode:Lisp;'
+filter uspat-200.txt | downto $D1		| append map.lisp.29
+filter uspat-200.txt | fromskipto $D1 $D2	| out ifu.lisp.55
+filter uspat-200.txt | fromskipto $D2 "$D3"	| out funcall3.lisp.61
+filter uspat-200.txt | from3rdto "$D3" ''	| out funcall2.lisp.61
+#
+D1='F:>lmach>ucode>FUNCALL1.LISP.25'
+D2='F:>lmach>ucode>funcall.lisp.142'
+filter uspat-210.txt | downto $D1		| append funcall2.lisp.61
+filter uspat-210.txt | fromskipto $D1 $D2	| out funcall1.lisp.61
+filter uspat-210.txt | fromskipto $D2 ''	| out funcall.lisp.142
+#
+D1='F:>lmach>ucode>FLOAT.LISP.33'
+filter uspat-220.txt | downto $D1		| append funcall.lisp.142
+filter uspat-220.txt | fromskipto $D1 $D2	| out  float.lisp.33
+#
+D1='F:>lmach>ucode>flavor.lisp.25'
+D2='F:>lmach>ucode>DIVISION.LISP.34'
+D3='F:>lmach>ucode>disk.lisp.56'
+filter uspat-230.txt | downto $D1		| append float.lisp.33
+filter uspat-230.txt | fromskipto $D1 $D2	| out flavor.lisp.25
+filter uspat-230.txt | fromskipto $D2 $D3	| out division.lisp.34
+filter uspat-230.txt | fromskipto $D3 ''	| out disk.lisp.56
+#
+D1=';;; -\*- Mode:Lisp;'
+D2='F:>lmach>ucode>CATCH.LISP.10'
+filter uspat-240.txt | downto $D1		| append disk.lisp.56
+filter uspat-240.txt | fromskipto $D1 $D2	| out control.lisp
+filter uspat-240.txt | fromskipto $D2 ''	| out catch.lisp.10
+#
+D1=';;; -\*- Mode:Lisp;'
+D2='F:>lmach>ucode>bitblt-block-mode.lisp.1'
+filter uspat-250.txt | downto "$D1"		| append catch.lisp.10
+#xxx disk code in middle; looks like old code, not current
+D3=';Disk DMA task.'
+D4=';Kernel of blting'
+filter uspat-250.txt | fromskipto "$D1" $D2	| out branch.lisp
+filter uspat-250.txt | fromskipto $D2 ''	| out bitblt-block-mode.lisp.1
+#
+filter uspat-260.txt 		| append bitblt-block-mode.lisp.1
+#
+D1=';;; -\*- Mode:Lisp;'
+filter uspat-270.txt | downto "$D1"		| append bitblt-block-mode.lisp.1
+filter uspat-270.txt | fromskipto "$D1" ''	| out bitblt.lisp
+#
+filter uspat-280.txt				| append bitblt.lisp
+#
+D1=';;; -\*- Mode:LISP;'
+D2=';;; -\*- Mode:Lisp;'
+filter uspat-290.txt | downto "$D1"		| append bitblt.lisp
+filter uspat-290.txt | fromskipto "$D1" "$D2"	| out bind.lisp
+filter uspat-290.txt | from2ndto "$D2" ''	| out basic.lisp
+#
+D1='F:>lmach>ucode>array.lisp.94'
+D2='3600 Microcode'
+D3=';Dispatch to appropriate accessing routine'
+filter uspat-300.txt | downto $D1		| append basic.lisp
+filter uspat-300.txt | fromskipto $D1 "$D2"	| out array.lisp.94
+filter uspat-300.txt | fromto "$D3" ''		| append array.lisp.94
+#
+D1='F:>lmach>ucode>arith-escape.lisp.1'
+D2='F:>LMACH>UCODE>ARITH.LISP.61'
+D3=';;; -\*- Mode:Lisp;'
+D4='MICROCODE BITS'
+filter uspat-310.txt | downto $D1		| append array.lisp.94
+filter uspat-310.txt | fromskipto $D1 $D2	| out arith-escape.lisp.1
+filter uspat-310.txt | fromskipto $D2 "$D3"	| out arith.lisp.61
+filter uspat-310.txt | fromskipto "$D3" "$D4"	| out amem-map.lisp
+# done
+
+#
+# fixups
+#
+ed output/check.lisp.116 <<EOF
+/(push '(:show-failing-microinstruction/s/(push/;(push/p
+wq
+EOF
+
+#temp
+ed output/uh.lisp.126 <<EOF
+/:array-leader/s/:array-leader//p
+wq
+EOF
+
+#
+ed output/sim.lisp <<EOF
+/(let #Q ((default-cons-area working-storage-area))/d
+s/))))))/)))))/
+wq
+EOF
+
+#
+ed output/simx.lisp <<EOF
+/);end comment/d
+/(ldb 0006 (frame-misc-data)))/a
+(putprop 'frame-number-of-args '(0 6) 'byte-field )
+(putprop 'frame-cleanup-bits '(6 5) 'byte-field )
+(putprop 'frame-buffer-underflow-bit '(6 1) 'byte-field )
+.
+wq
+EOF
+
+ed output/uu.lisp.429 <<EOF
+s/needs-stack smashes-stack brancn-predict stop-ifu/needs-stack smashes-stack brancn-predict stop-ifu branch branch-if branch-if-not/
+s/0 opcode 377/0 opcode 777/
+s/1000 opcode 1377/1000 opcode 1777/
+wq
+EOF
+
+exit 0

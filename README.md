@@ -226,6 +226,14 @@ case is be matched in the local mirror by a `WAYBACK.md` file.
 These files are the branch points of the mirrored tree.
 The leaf nodes, the actual files, are stored at the Wayback Machine itself.
 
+### `.wayback.txt` files
+
+In some cases, there may be a need to have a locally cached representation of
+something for browsing purposes, such a `.sh` file on the Wayback Machine.
+These are handled in `WAYBACK.md` files by special case, but a file like
+`foo.sh.wayback.txt` is a local representation of `foo.sh` on the
+Wayback Machine as a safe text file, rather than something executable.
+
 ### Other `.md` files
 
 There are occasionally situations where I needed other .md files.

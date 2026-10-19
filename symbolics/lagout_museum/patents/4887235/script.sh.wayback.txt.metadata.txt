@@ -1,0 +1,2 @@
+This is a mirror of what would be `script.sh` on the remote host. I added `.wayback.txt` to its name because I didn't want to offer an executable script in this repository, but I wanted a browsable copy of its contents.
+

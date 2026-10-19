@@ -1,0 +1,4 @@
+This is not an official Symbolics document. This was just a record of
+some of my to-do items from a point in time. (There are hand-made
+annotations by me in the later pages.)
+ --Kent Pitman 17-Oct-2026

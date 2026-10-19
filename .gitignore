@@ -15,6 +15,11 @@ ARTIFACTS/
 
 PENDING/
 
+# This is for things that have a specific reason to be held.
+# For example, an issue with intellectual property management.
+
+HOLD/
+
 # This is for things like alternate scans or, importantly, the original
 # scans before I compressed the scans using ghostscript, just in case
 # we later find that compression did damage, so that we can recover at
