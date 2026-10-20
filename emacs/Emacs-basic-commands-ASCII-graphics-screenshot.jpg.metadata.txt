@@ -1,0 +1,22 @@
+I wrote the text below as an ALT string for the accompanying graphic,
+which I've used to socialize information about the pdf file.
+ --Kent Pitman, 19-Oct-2026
+
+==============================================================================
+
+An ASCII graphics drawing of how EMACS commands are arranged
+directionally, like a compass, with "Cursor" at the middle and lines
+outward at the north, east, south, and west directions. There are two
+levels of distance forming rings around that. "Previous Line
+(Control-P)" and "Next Line" (Control-N) are to the near north and
+south, respectively. "Move Backward (Control-B)" and "Move Forward
+(Control-F)" are to the near west and east, respectively. Then
+"Previous Screen (Meta-V)" and "Next Screen (Control-V)" are to the
+far north and south, respectively. And "Head of Line (Control-A)" and
+"End of Line (Control-E)" are to the far west and east, respectively."
+In the blank space at the corners are additional notations noting
+Rubout or Delete deletes backward, Control-D deletes forward,
+Control-T twiddles characters, and Control-K kills to end of
+line. There is a note at the very top left saying that Meta-Less-Than
+goes to the beginning of the buffer and another at the bottom right
+saying that Meta-Greater-Than goes to the end of buffer.

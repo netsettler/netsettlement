@@ -1,0 +1,65 @@
+My recollection is that I'm the author of this, thought it's possible
+I'm misremembering and someone did an earlier version that I
+augmented. I definitely took a strong interest in the whole issue not
+just of the Emacs command set but of the mnemonics and why they were
+chosen.
+
+This describes TECO-based Emacs from somewhere that's hard to pinpoint
+precisely in time. It could be as early as 1978 or as late as 1985,
+but probably it's around 1980-1981 just because it's a reaction to
+other documentation for Emacs, which already described this
+information but in a different shape, and it would have taken time for
+it to build up in my head that there was a need to do that. Also, I
+think this was done while at the Lab for Computer Science working on
+Macsyma. My office when I worked later for the MIT AI Lab was only
+around the corner on the same floor, but I was occupied with other
+matters and didn't have as much time to do this kind of thing after
+1981. (Inspecting the set of commands available and comparing to when
+they were introduced might also bound it further, but I wasn't that
+meticulous as I put this metadata together.)
+
+In particular, the Emacs command set has no global consistencies, but
+a large number of local consistencies. This is sort of analogous to
+the same way that partial orders are not total orders, except instead
+of ordering, we're talking about set inclusion, so it's as if there
+are specific subsets of the Emacs command set that work together, and
+often there is a sort of local sense of logic about the name choice.
+
+The document opens with a ASCII graphics representation of some of the
+motion commands to make this more apparent. Only a few displays were
+capable of pictures at the time. Most could show only fixed-width
+text. And some were not even display terminals but doing everything on
+paper.
+
+(And, yes, Emacs originally worked on paper terminals. Hint: It did
+not generally show you the whole buffer, just hints of where you were
+in a moment. Usually you only saw what was behind your cursor so that
+self-insert went naturally after that. If you did Control-F to move
+across a character, it would appear on the paper so you could tell it
+was behind you.)
+
+In general, commands were chosen to have some relationship to the
+command.  - Control-A to go to the start of a line because "A" starts
+the alphabet.  - Control-E to go to the end of a line because "E" is
+the first letter of "end".  That's hardly consistency in how the names
+were chosen, but it gives you a way of remembering the command.
+
+Also, - Control-S for Search and Control-R for Reverse Search. Both
+happen to be incremental search by default, though there were
+competing Emacs libraries that assigned other kinds of searches to
+still these same keys. (Character Search and Reverse Character Search
+were popular with a few people, for example.)
+
+Some are more orderly...  Control-F to go forward a character, Meta-F
+ to go forward a word, Control-Meta-F to go forward an S-expression in
+ Lisp code, so the chord Control- selects character commands in many
+ cases but not all cases, and Meta- selects word commands, and
+ Control-Meta- selects S-expression commands. This allows you at least
+ some way to guess what Control-B, Meta-B, and Control-Meta-B might
+ do.
+
+So yes, this lists a lot of the Emacs commands but the goal isn't just
+to do that. It's to do it in a particular order that lets you see the
+little ripples of regularity.
+
+ --Kent Pitman, 19-Oct-2026
