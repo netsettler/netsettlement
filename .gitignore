@@ -57,6 +57,14 @@ ARCHIVE/
 # Emacs backup files
 *~
 
+# Informal other file names that aren't generally checked in
+
+*.BAK
+*.OLD
+*.SAVE
+*.TEMP
+*.TMP
+
 # PyCharm metadata
 .idea/
 

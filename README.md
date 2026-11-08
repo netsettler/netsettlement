@@ -5,8 +5,9 @@
 
 A place for bits of history from when the net was still getting settled.
 
-Mostly PDFS of historical artifacts.  
-Most text files and images are modern metadata.
+Most of what you'll find here are PDFs of historical artifacts.
+Interspersed there are also a fair number of text files and images,
+from a more recent era, that act as metadata.
 
 ## No Forking, please...
 
@@ -15,7 +16,7 @@ I strongly request that you do _not_ fork this repository.**
 
 ## Cloning Probably OK, but please note...
 
-If you're disk-space sensitive, I recommend browsing on the Github
+If you're disk-space sensitive, I recommend browsing on the GitHub
 site rather than cloning the repo. It's maybe not huge yet, but it
 might be once it's done.  You might resent the disk space and only
 want individual files, if any.  There is no intended prohibition on
@@ -29,7 +30,7 @@ this `README.md` document in full as well, for the same reasons.
 
 **There may still be complex intellectual property issues involved
 in you making a clone. I can neither advise you nor
-give you formal permission.** But at least the cloning mechanism,
+give you formal permission.** But at least the cloning mechanism
 allows me to later issue adjustments to the record that you'll still
 be configured to receive.
 
@@ -70,7 +71,9 @@ does not seem to offer definitive guidance, so I've made what I hope
 are some reasonable assumptions.
 
 * Purpose. This is not a profit-making activity. I'm not charging money
-  for the items I'm placing here.
+  for the items I'm placing here. (I _am_ accepting donations generally,
+  as this project is expensive, but I am doubtful I will make any profit,
+  and certainly there is no expectation I will.)
 
 * Nature. These works are generally several decades old, and while there
   is no way to know for sure, as I think of possible uses of this
@@ -106,6 +109,37 @@ If you need help with that, please don't
 expect there's a lot I can do, or that I can comply on any particular timeline,
 but with those caveats, you're welcome to
 [contact me](https://nhplace.com/kent/contact-kent.html).
+
+## Donations
+
+This work is intended to be available to all, regardless of their
+economic situation, so no fee is asked. But, that said, if you feel
+you've gotten value, and you have sufficient surplus to help with
+the effort, any donation will be gratefully accepted.
+
+Just please note:
+
+* Any money sent is ***not a purchase*** and ***does not create an implied
+  contract*** of any kind. It will be treated as a gift, a voluntary
+  contribution without any expectation of compensation or consideration.
+
+* Contributions are ***not tax-deductible***. As a matter of formal
+  legality, this work is ***not a charity***. Informally, we should all
+  aspire to kinder behavior than mere legal compliance requires,
+  but some aspirations, by their nature, cannot be reduced to legal promises.
+
+If you have any concerns, no matter how small, about these caveats as presented,
+you should not make a donation.
+
+Also, if you are not running a surplus, you should not make a donation.
+Some days it's enough struggle just to survive. You've already done something
+meaningful by visiting and taking an interest in this work. Feel good about that.\
+&nbsp;<!-- blank line -->
+
+<p align="center"><!--
+   --><a href="https://www.paypal.com/donate/?hosted_button_id=35ZU2N8PY3AH4"><!--
+      --><img alt="Donate" 
+              src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" /></a></p>
 
 ## Metadata Files and Annotation Conventions
 
@@ -169,8 +203,9 @@ there may be a sidecar file for _X_ named _X_`.license.txt` that contains
 a faithfully reproduced copy of that license or permission statement,
 possibly introduced by an explanatory preamble.
 
-Please note that this is NOT related to an _X_`.license` file described
-in [the REUSE specification](https://reuse.software/spec-3.3/).
+Please note that this is ***NOT*** related to an _X_`.license` file
+described in
+[the REUSE specification](https://reuse.software/spec-3.3/).
 
 If a preamble occurs in a `.license.txt` file, it will be separated from
 the historical license or permission statement by a text line
@@ -211,7 +246,8 @@ about all `README.md` files in this repo had painted me into a corner.
 ### `WAYBACK.md` files
 
 For some file hierarchies, archival copies of things I had were found
-to already exist on [the Wayback Machine at archive.org](https://archive.org).
+to already exist on
+[the Wayback Machine at archive.org](https://archive.org).
 In that case, I may have mirrored a part of the Wayback Machine's directory
 structure in this repo to make browsing easier. This compensates for the fact
 that access to the Wayback Machine is often slow,
@@ -221,15 +257,15 @@ See
 for more details on the mirrored tree that starts at
 [`symbolics/lagout_museum/WAYBACK.md`](symbolics/lagout_museum/WAYBACK.md),
 and why I chose to do this.
-But, basically, each remote directory on the Wayback Machine in such a
-case is be matched in the local mirror by a `WAYBACK.md` file.
+But, basically, for each remote directory in that part of the Wayback Machine,
+there's an attempt to locally mirror it with a matching `WAYBACK.md` file.
 These files are the branch points of the mirrored tree.
 The leaf nodes, the actual files, are stored at the Wayback Machine itself.
 
 ### `.wayback.txt` files
 
 In some cases, there may be a need to have a locally cached representation of
-something for browsing purposes, such a `.sh` file on the Wayback Machine.
+something for browsing purposes, such as a `.sh` file on the Wayback Machine.
 These are handled in `WAYBACK.md` files by special case, but a file like
 `foo.sh.wayback.txt` is a local representation of `foo.sh` on the
 Wayback Machine as a safe text file, rather than something executable.
@@ -239,7 +275,7 @@ Wayback Machine as a safe text file, rather than something executable.
 There are occasionally situations where I needed other .md files.
 Since the 'markdown' (`.md`) file type did not exist at the time that
 these historical artifacts were created, I don't think there should be
-any ambiguity about the fact that such files are recent. ANd their
+any ambiguity about the fact that such files are recent; and their
 content will identify their nature.
 
 ### `RESTORATIONS/` subdirs
@@ -301,7 +337,8 @@ is easier to find in `.metadata.txt` or `.manifest.txt` files where they exist.
 As of the initial creation of this repo, no OCR work has been done. My scanner does
 not do it automatically, so these are just images of pages for now.
 
-I have mostly scanned things at [300 DPI](https://en.wikipedia.org/wiki/Dots_per_inch)
+I have mostly scanned things at
+[300 DPI](https://en.wikipedia.org/wiki/Dots_per_inch)
 since I think that was the maximum
 print quality of most things from the era these come from.
 
@@ -335,7 +372,7 @@ to shrink the scanned files to a more compact size, which is what I've checked i
 The scanner is an old Canon MX310 purchased on Facebook Marketplace. I
 had a newer scanner but without an automatic document feeder. I'm
 working with very fixed financial limitations, so it was the best I
-could, and for all I'm not Facebook's biggest fan, Marketplace is
+could easily obtain. For all I'm not Facebook's biggest fan, Marketplace is
 sometimes a real life-saver for buying usable stuff at an affordable
 price. The automatic document feeder put the rescue of many of the
 larger documents within reach. Otherwise, I'd have just saved the
@@ -345,12 +382,14 @@ if they were even still at that point in a condition to do so.
 
 ## About REUSE
 
-I don't purport to be compliant with the [REUSE Specification](https://reuse.software/spec-3.3/),
-but for now I did try to informally adopt conventions that seemed aligned
-with my needs. If you find there is some way that an adjustment would be
-helpful to make this repository more useful to you,
-feel free to
-[contact me](https://nhplace.com/kent/contact-kent.html) about it.
+I don't purport to be compliant with the
+[REUSE Specification](https://reuse.software/spec-3.3/),
+but for now I did try to informally adopt some of its conventions 
+that seemed aligned with my needs. If you find there is some way
+that an adjustment would be helpful to make this repository more
+useful to you, feel free to
+[contact me](https://nhplace.com/kent/contact-kent.html)
+about it.
 
 ## References
 
