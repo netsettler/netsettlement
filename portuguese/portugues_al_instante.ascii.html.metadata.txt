@@ -1,0 +1,8 @@
+The file "portugues_al_instante.ascii.html" contains the same textual
+content as "portugues_al_instante.html", but this file is intended
+only as a backup version in case the characters in the main file,
+which rely on proper preservation of UTF-8 encodings, get somehow
+misaligned. A way of making this historical preservation/restoration
+effort just a little more robust. Maybe it's weird of me to care about
+such redundancy, but it was cheap to do and I figurd "why not?"
+ --Kent Pitman, 2026-11-03
