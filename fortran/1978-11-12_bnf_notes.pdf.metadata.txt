@@ -1,0 +1,14 @@
+I really cringe at looking at this particular document. This is from
+1978 when I was just starting work on the translator. It may or may
+not be correct or complete as to what the translator did but at the
+time I was just learning about languages and bnfs and compilers, so it
+seemed the right way to express the output. In years following, I
+would come to eschew thinking about anything Lispy in terms of this
+kind of bnf, and instead would have described the output in structural
+form (symbols, numbers, cons cells, etc., which each have their own
+print structure, but that isn't always best described in this kind of
+bnf form, since the lisp reader is more dynamic in nature). But this
+is best seen as a step in my evolution of understanding and typical of
+how people talked about languages in the day.
+ --Kent Pitman 15-Nov-2026 (cringing)
+ 

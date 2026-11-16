@@ -1,0 +1,29 @@
+This appears to be a draft of the thesis as I had begun it.
+
+I think it has some conceptual and technical overlap with the paper
+"A FORTRAN->LISP Translator" that appears in the
+Proceedings of the 1979 Macsyma Users' Conference,
+Washington, D.C., June 20-22, 1979.
+A webbed version is on my personal web site at
+https://nhplace.com/kent/Papers/Fortran-to-Lisp.html
+But the thesis was of course going to be longer and able to go into
+more detail.
+
+There are separate documents in this repository, like notes on how
+Fortran compiles things and how my translator did equivalent things,
+that were probably being assembled by me to include in the thesis
+had I continued to work on it.
+
+The printer cover page is included to show the date, though the use of
+">" in the filename meant latest version, and it seems I suppressed
+headers so we can't see what version.
+
+The directory "PIQUE" (which I intended to be pronounced "PK") was one
+of my several personal directories. "PK" is my initials, backwards. I
+had a lot of directories on ITS and most had some relationship to my
+name, or to some project I worked on, but this one was probably one of
+the more mysterious ones, so I figured it might as well be
+mentioned. It was also a pun because at the time I created it, I
+dating Phyllis Koton, a fellow computer science student. Her login
+name on the same machine was "PK". So the naming was an homage to her
+as well; the directories were homonyms.

@@ -1,0 +1,45 @@
+These notes seem to lack an original source program. Based on
+Alternative 1 and my guidance to GPT 5.5 at abacus.ai that
+
+ * / is the syntactic quoting character in Maclisp,
+   not backslash.
+
+ * Colon (:) is an alphabetic and means assignment.
+
+ * +$ and *$ are operations on declared reals in Maclisp
+   to do floating point addition and multiplication, respectively.
+
+it was able to suggest this as perhaps a plausible originating Fortran
+77 program from which this code might have been derived, though noting
+that its name notwithstanding, this is not a generic matrix multiply
+program and it looks more like just a toy example for testing.
+
+SUBROUTINE MATMUL(X,Y,IDIM)
+      REAL X(1), Y(1), Z(100)
+      INTEGER IDIM
+      DO 100 I = 1, IDIM, 1
+         Z(I) = 0
+         DO 200 J = 1, IDIM, 1
+  200       Z(I) = Z(I) + X(I,J) * Y(J,I)
+         DO 100 J = 1, IDIM, 1
+  100       X(I) = Z(I)
+      RETURN
+      END
+
+The important part in the scan is just to note that the reason this
+is a translator, not a compiler, is partly that I really didn't want
+to do the hard work of compilation when there were already tools to
+do that, but also I wanted from an aesthetic point of view to design
+a target language that allowed one to see what the Fortran had been
+doing, and even to intersperse Lisp code later into the translation.
+
+Considerable effort was made to preserve Fortran semantics for
+Fortran-declared parts while allowing Lisp semantics for other parts.
+This is essential because of the call-by-reference nature of Fortran,
+which still had to mesh with interspersed Lisp that might not presume
+such semantics. So, for example, FORTRAN-declared variables were
+replaced differently than Lisp variables, becoming FPUT or FGET
+statements in the fully expanded code. Similarly, calls to functions
+had to be managed differently though that isn't shown here.
+(It is mentioned in the documentation.)
+  --Kent Pitman 15-Nov-2026

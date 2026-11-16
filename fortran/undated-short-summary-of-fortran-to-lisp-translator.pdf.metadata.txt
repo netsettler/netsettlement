@@ -1,0 +1,35 @@
+This document was fanfold printer, probably from an LA36 paper
+terminal, which was a commonly available device of the late 1970s, not
+from a line printer that one would submit to as a batch device. (I'm
+not sure we had any of those.)
+
+There is no date, but I would guess this was created toward the end of
+the multi-year process of developing the translator, mainly because
+the business with Control-S (which was unique to this translator, and
+an accommodation to how tight we were on disk space) was probably a
+feature added as things started to get used.
+
+Did it take more disk space to implement and document that feature
+than was ever saved by it? Oh, probably.  But it was a gesture to say
+I understood the precious nature of disk space. In fact, that there is
+any record at all in this repository is also a recognition of the
+tight disk space. We were under constant pressure to delete things.
+But especially when we moved from the Xerox Graphics Printer (XGP),
+which was cool but slow, to the Dover, a laser printer from Xerox that
+seemed like it was built out of spare parts from a photocopier but
+which printed pages 10 times as fast, I started hardcopying things
+before deleting them so that they weren't really lost. Not that we had
+scanners and certainly not OCR, but in the worst case things could be
+typed back in. And anyway, it was there to read.
+
+An entire session was on a single stream of paper, and I probably had
+arranged for a print command at the bottom of a page, so that the text
+here would begin at the top.
+
+You can tell this was an interactive session by the `$$U` and the
+console free at the bottom. As explained in better detail in 
+[the README](README.md), `$$U` was a command to log out of DDT,
+the ITS interactive shell. But my point is that it wasn't part of the
+instructions.
+
+ --Kent Pitman 13-Nov-2026

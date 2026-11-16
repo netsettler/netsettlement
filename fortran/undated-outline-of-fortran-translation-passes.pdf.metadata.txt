@@ -1,0 +1,126 @@
+This was on fanfold paper, probably an LA36 connected to MIT-MC.
+Since I am remotely controlling it, I may have done it from somewhere
+non-local, such as my house. Or maybe just down the hall in my office.
+If memory serves, the LA36 was in a room of its own that people mostly
+didn't use because they had VT52's (24x80 display screen) or better (a
+Knight TV or Lisp Machine). But it was still useful to get low-grade
+hardcopy.
+
+The first part is not the document. The part that says
+
+    $$u
+    MC ITS 1150 Console 21 Free 02:34:11
+
+is a remnant of a prior console session. It was possible for any
+terminal on the ITS system to connect to any other socially with
+Control-Underscore C followed by the name of the logged in user
+you wanted to connect to. This would link the two in a conversation,
+preempting input going to whatever they were doing. You can see here:
+
+    LINK FROM KMP
+
+which is me connecting to this console. In this case, ther was no one
+logged in. There was some way to refer to an unlogged console, which was
+used here. It might be that was done by just ^_C21 or something like that,
+I don't recall. When connected in such a connection, the person on the
+other end could at any time slave the person they were talking to.
+(You can watch Star Trek: The Wrath of Khan to see this played out.)
+The way to protect yourself was to slave yourself first. I'm not sure
+I remember the key sequence, but probably Control-_ I to slave the other
+console or Control-_ E to slave oneself, but it might be the reverse.
+At that point, you were still in the link, but your keystrokes controlled
+the slaved console. No notification would appear on the slaved party's
+console, but when you see the transcript say
+
+    MC ITS.1150. DDT^S
+
+that is the console waking up because it's been slaved and Control-Z
+has been typed to wake it up, which is what you would do if you were
+sitting at an unlogged console. The ^S is a Control-S interrupt that
+silences the output. It was presumably done to not waste paper with
+the wakeup message. The asterisk is a ocmmand prompt saying it's time
+for input again. At this point the console is no longer silenced, and
+TURNIP$U is me logging is as one of my alternate login names, TURNIP.
+(You'd have to ask one of my previous girlfriends, Ginger Fitzsimmons,
+why Turnip. Just one day she said life was a bowl of vegetables and
+that was the one she assigned me. I think it was not meant to be
+flattering, but I took it on as a nickname to not be daunted. The
+TURNIP directory contained, among other things, various artifacts
+related to my Fortran to Lisp translator.)
+
+A query surrounded by hyphens was the convention for asking a question
+intended to be answered with a Space for Yes or Rubout for no.* I'm not
+sure why it asked about hardcopy, but maybe just to avoid doing other
+login actions, or maybe to set filename actions differently.
+
+The text after the asterisk is interesting in its use:
+
+    *^R TNP;OUTLIN >$
+
+The "$" here is an altmode (ASCII 27 decimal, which echoed identically
+to a dollarsign on many consoles. On more advanced consoles it would have
+been a diamond-like character sometimes then called a "lozenge" that
+looks like the hollowed out shape of a diamond on a deck of cards.
+Using Altmode in this case caused the defaults to be redisplayed, but
+had the side effect of changing the default to be what was typed, so
+that when ^D was typed (a soft, non-interrupting way to abort a command
+synchronously from the parser), the new default would remain. In effect,
+I was setting things up so that I knew what the default filename was and
+could type just ^R to print the file I wanted. The "XXX?" is DDT telling
+me that it had aborted the print command I was setting up. Here it does
+not reprompt, but it is ready for a new command after the "XXX?".
+
+The ":SLEEP 10*30" is a 300 second sleep. I'm not sure why I didn't
+sleep 300. Maybe I had already typed 10 and decided it should be longer.
+But the idea was that I was going to type ahead the print request and
+the request to log out after it was printed and then I was going to break
+the connection from the other console and leave it to do the commands I
+had issued when it was slaved. So the
+
+  ^R
+  $$U
+
+was me saying "when you're done sleeping, print the default filename
+and then logout of this paper terminal.  The
+
+  ^_N
+
+is me closing the social link between the two consoles, and implicitly
+the slaving of that console. The command one typed was indeed
+Control-Underscore N (^_N) and it would echo on both consoles when
+you did. The "*" on the next line happened later, presumably, after the
+sleep, prompting for the next command, which had already been typed and
+was not re-echoed. The text that follows is the file "TNP;OUTLIN >"
+
+I only scanned the one page, though it looks like it went on.
+I already have a different artifact that has this same list of random
+ideas, and it seemed redundant to scan that list separately. What matters
+for this one is the set of operational passes of the translator.
+And the record of this weird interaction in DDT, which shows a little
+about the way DDT was casually used. This kind of interaction between
+consoles was very commonplace.
+
+  --Kent Pitman 15-Nov-2026
+
+
+* The business of what a "rubout" was and why it was not called "delete"
+or "backspace" at that time is quite complicated and probably documented
+elsewhere. But just in case, this is my approximate recollection:
+The character we spoke of as Rubout, on a VT52 appeared, appeared as
+as DELETE, and sent ASCII 127 decimal (displayed as ^? if quoted).
+This was a backward delete, different than the modern Backspace. There
+was a separate key on the VT52 marked "BACK SPACE" that sent ASCII 8
+(displayed as ^H if quoted), that was for moving the cursor backward
+non-destructively. (On the Knight TV, the backward delete became
+"RUBOUT" and was placed to the left of the "A" on the home row so that
+it was an easier reach and more useful than "CAPS LOCK", which many at
+the time thought to be a useless key.) The Lisp Machine "Space Cadet"
+keyboard had all three of "RUB OUT" (delete backward), "DELETE" (which
+I seem to recall was delete forward), and "OVER STRIKE" (which I seem
+to recall was backspace).
+The web page http://xahlee.info/kbd/lisp_keyboards.html
+offers views of a lot of these keyboards, illustrating the evolution.
+For anything else, I would look to Wikipedia but you probably won't
+there find as many useful images in one place. FORTUNATELY, for the
+purposes of this document, all you need to know is that at the time,
+we knew what key to press. :)

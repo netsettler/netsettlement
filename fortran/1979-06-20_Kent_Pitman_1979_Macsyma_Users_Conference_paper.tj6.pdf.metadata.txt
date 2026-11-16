@@ -1,0 +1,45 @@
+I believe this document is in TJ6 format, an early text justifier
+markup that was capable of displaying to the Xerox Graphics Printer
+(XGP) available at the MIT AI Lab.
+
+This is the source to my paper that appears in the proceedings of the
+1979 Macsyma Users Conference. I can't say for sure that it is the
+precisely identical version, but I'm guessing probably it is.
+
+This text is on fanfold paper of the sort that would have been
+obtained from an LA36 paper console / printer. Those pages did not fit
+in my scanner. In most cases, that meant I had to scan the top part of
+the page separate from the bottom, so the pages in this PDF
+considerably overlap.
+
+ - PDF page 1 is the top 2/3 of paper page 1,
+   PDF page 2 is the bottom 2/3 of paper page 1,
+   PDF page 3 is the top 2/3 of page 2, and
+   PDF page 4 is the bottom 2/3 of page 2.
+
+ - There is one page where the line was so long that
+   I needed a third page to catch the overflow.
+   (That page will be obvious because it does not
+   start at the left edge.)
+
+ - The final PDF page is the top 2/3 of the final
+   paper page. There was not a full page of text,
+   so no bottom image needed in the PDF.
+
+The characters (like ^F) introduced by "^" are control characters. For
+example:
+
+ - Control-F followed by a digit selected the corresponding font.
+   For example, ^F0 selects font 0. See the .FONT 0 declaration at the
+   start of the file.
+
+ - Control-Q quoted the character following. For example, this was needed
+   for ^Q^Y to tell TJ6 to send an ASCII control-Y (decimal code 25), which
+   in the SAIL (Stanford AI Lab) character set meant right-pointing arrow.
+
+TJ6 coupled with the XGP were able to produce what was called
+"camera-ready copy" that could go straight into the proceedings
+without re-typesetting.
+
+ --Kent Pitman 15-Nov-2026
+

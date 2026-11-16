@@ -1,0 +1,19 @@
+The most important thing to know about this document is that it
+involves some notes I had taken about "hard cases" in translation.
+This is NOT documentation on what the translator actually did.
+
+As I recall, the translator was pretty strong on things like DATA,
+COMMON, and EQUIVALENCE, or at least the architecture was designed to
+make all of that very easy. I don't know that I implemented every last
+syntactic feature, though.
+
+On the other hand, if I had gotten around to making the translator
+support the example in these notes where you could pass go tags to a
+subroutine, I'd be surprised (but pleased).
+
+[If I even fully understand the semantics of that last item, it feels
+like it wouldn't have been hard to do, it was just an obscure special
+case. Looking back on it, it looks similar to modern Common Lisp
+catch/throw or restarts, though in the day I think it might have been
+seen as coroutines.]
+ --Kent Pitman 13-Nov-2026

@@ -47,34 +47,41 @@ writing of _The Revised Maclisp Manual_ (a.k.a. the &ldquo;Pitmanual&rdquo;)
 was one later result of that.
 [That story has been told elsewhere.](https://maclisp.info/pitmanual/history.html)
 
-Eventually, though, I opted for a degree in Philosophy and
-Linguistics (course 24 in MIT-speak), which did not in fact
-require the writing of a thesis.
-But I _did_ finish the coding work for what was to have been
-my thesis, and created a way for people to
-access the IMSL Fortran library. I wrote the work up in a paper
-unsurprisingly titled
+Eventually, though, I opted for a degree in Philosophy and Linguistics
+(course 24 in MIT-speak), which did not in fact require the writing of
+a thesis.  But I _did_ finish the coding work for what was to have
+been my thesis, and created a way for people to access the IMSL
+Fortran library. I wrote the work up in a paper unsurprisingly titled
 [A FORTRAN&rarr;LISP Translator](https://www.nhplace.com/kent/Papers/Fortran-to-Lisp.html)
 that I presented at the 1979 Macsyma Users Conference.
 
-After graduating MIT in 1981, I worked at the MIT AI Lab and, for a summer,
-the UK's Open University on unrelated projects. But in 1985,
-I took my first salaried commercial job at
+The thesis draft-in-progress in both
+[source TeX form](1980-05-21_Kent_Pitman_Thesis_Draft.tex.pdf)
+and
+[typeset ("press") form](1980-01-20_Kent_Pitman_Thesis_Draft.press.pdf),
+not necessarily synchronized version-wise with one
+another, appears in this archive, along with notes I had about
+things to do that may or may not have been completed.
+
+After graduating MIT in 1981, I worked at the MIT AI Lab and, for a
+summer, the UK's Open University on unrelated projects. But in 1985, I
+took my first salaried commercial job at
 [Symbolics](https://en.wikipedia.org/wiki/Symbolics#History)
-to work again on Macsyma, which Symbolics had turned into
-a commercial product. However, the IMSL relationship that Macsyma
-had enjoyed while at MIT did not 
-carry over to the Symbolics endeavor, and if it had,
-Symbolics had its 
-own native Fortran implementation, so my work there was not on
-the translator. I did other things.
+to work again on Macsyma, which Symbolics had turned into a commercial
+product. However, the IMSL relationship that Macsyma had enjoyed while
+at MIT did not carry over to the Symbolics endeavor, and if it had,
+Symbolics had its own native Fortran implementation, so my work there
+was not on the translator. I did other things.
 
 George Carrette (original creator of
-[SIOD](https://en.wikipedia.org/wiki/SIOD), and generally a very smart
-guy and prolific Lisp programmer) was part of the Macsyma group at MIT
-when I first met him. He was a big fan of the translator and went on
-to use it on other operating systems with good success, so it did see
-a life beyond its original intent.
+[SIOD](https://en.wikipedia.org/wiki/SIOD),
+and generally a very smart guy and prolific Lisp programmer) was part
+of the Macsyma group at MIT when I first met him. He was a big fan of
+the translator and went on to use it on other operating systems with
+good success, so it did see a life beyond its original intent.
+
+
+
 
 ## Macsyma and the Macsyma Group
 
@@ -90,17 +97,17 @@ running an MIT-created/maintained operating system called ITS (the
 Incompatible Timesharing System). To the outside world (the ARPANET),
 this machine was generally known as MIT-MC. (There were no dots in
 host names on the ARPANET, as the total number of machines was
-[quite finite](https://upload.wikimedia.org/wikipedia/commons/b/bf/Arpanet_logical_map,_march_1977.png). There was eventually an internet host named
-mc.lcs.mit.edu,
-for example. But in the late 1970s and early 80s, such fine-grained parsing
-was unnecessary to an ARPANET
-with only a few hundred computers at all.)
+[quite finite](https://upload.wikimedia.org/wikipedia/commons/b/bf/Arpanet_logical_map,_march_1977.png).
+There was eventually an internet host named `mc.lcs.mit.edu`, for
+example. But in the late 1970s and early 80s, such fine-grained
+parsing was unnecessary to an ARPANET with only a few hundred
+computers at all.)
 
 The Macsyma Consortium was part of
 [Project MAC](https://www.britannica.com/topic/Project-Mac),
-which later became MIT's Laboratory for Computer Science, and which at the time
-was separate from the MIT AI Lab. (Later the two entities merged into a
-consolidated [CSAIL](https://csail.mit.edu).)
+which later became MIT's Laboratory for Computer Science, and which at
+the time was separate from the MIT AI Lab. (Later the two entities
+merged into a consolidated [CSAIL](https://csail.mit.edu).)
 
 (Note, too, that Project MAC has no relation at all to Apple's
 Macintosh computers, which came much later.)
@@ -178,12 +185,11 @@ error-prone, but I looked at the file date on each file, which either
 came from the top of each page of file content or from a cover page.)
 
 I assumed that the files were probably printed all on the same day,
-though they may have been printed one-by-one and that might not literally
-be true. (I did find collected sets of files in some of my archiving where
-this assumption is violated. But, in general, when I was doing a big
-  set to save,
-I understood the need to have a coherent set of files, so I probably
-tried to get it 'adequately close'.)
+though they may have been printed one-by-one and that might not
+literally be true. (I did find collected sets of files in some of my
+archiving where this assumption is violated. But, in general, when I
+was doing a big set to save, I understood the need to have a coherent
+set of files, so I probably tried to get it 'adequately close'.)
 
 So I think these bundles represented either coherently loadable sets
 or at least partial sets that were trying to work together. The sets
@@ -231,7 +237,12 @@ you're inspired to undertake in a way that collaborates in a
 synchronized way with this historical archive, feel free to
 [contact me](https://nhplace.com/kent/contact-kent.html).
 
-## Background on Filenames
+## Background Information
+
+This section contains some background information about various tools
+that may help in deciphering transcripts.
+
+### About Filenames
 
 The ITS filenames had four parts. Each part could have 1 to 6
 [DEC sixbit](https://en.wikipedia.org/wiki/Six-bit_character_code#DEC_SIXBIT_code)
@@ -279,7 +290,111 @@ file system, allowing for `(load '((dev dir) fn1 fn2))`, for example.
 This [namelist](https://maclisp.info/pitmanual/files.html#Namelist)
 format is detailed in _The Revised Maclisp Manual_.
 
-## About Lisp Style
+### About ITS and DDT
+
+This work was done on the ITS operating system, a home-grown MIT
+operating system used for specific projects. There were four instances
+of the ITS operating system (MC, ML, AI, and DM). This work was done
+on MC, or later sometimes MIT-MC. This predates the Internet, so
+although there was much later an mc.lcs.mit.edu, that was after all of
+this work and never a relevant name. In the early days, under the
+ARPANET, there were so few computers that you could make a global map
+on a single piece of paper and did not need elaborately structured
+names.
+
+DDT was a debugger, but also a shell. If you're a Lisp programmer, you
+will understand how the command prompt could be the same as the
+program that pokes into programs. DDT was the same, but for assembly
+language. (The name "DDT" is a bit of humor, since DDT is a pesticide
+that you use to get rid of bugs.)  While in principle you could issue
+line-oriented commands from DDT, prefixed by a colon and terminated with
+a carriage return (what is on modern keyboards called Enter), it was
+common for commands to be a single control character or one or two
+Altmode (usually called "Alt", and the equivalent of the modern ESC
+character at ASCII 27 decimal) characters followed by a dispatch
+character.
+
+Note that this is not the modern ALT key, which is more like what then
+was called a META key on the very few keyboards that had such an
+advanced thing. It might be called ALT or ESC, depending on keyboard,
+and it was in the upper left as the modern ESC key is, but it was a
+character, not a shift. In many contexts, and especially at DDT, the
+Alt key would echo as "$" but was distinct from an actual dollarsign,
+which echoed the same.
+
+To login, one might say `:login jdoe` but one might also just say
+`jdoe$u`. The latter was more common and required no carriage return
+to activate. To logout, one could say `:logout` but was more likely to
+say `$$u`. To print a file on the console, one might type `:print
+JDOE;MY FILE` but it was more common to press CTRL+R and then the
+file, as in `^R JDOE;MY FILE`.
+
+DDT did not always prompt for input. Sometimes that can confuse people
+who expect a prompt. When it did, the prompt was usually just an
+asterisk (`*`). If there is an unexplained `*` in output that seems to
+be at DDT, it's probably a prompt. (Lisp did a similar thing, so some
+stray asterisks might be in Lisp, too.)
+
+The command `^K` was a postfix command (followed a token) and started
+that program, usually echoing a "!" when it did. Typing `LISP^K` might
+echo "LISP^K!" and then go ahead to start Lisp, as would also happen
+from typing `:LISP` but would in the latter case need a carriage
+return to activate. (Also, `Q` as a job name was a synonym for `LISP`,
+so pressing `q^K` would invoke Lisp.)
+
+The interrupt character `^Z` stops the current process (called a 'job'
+by ITS), returning to DDT. The job continued to be loaded and could be
+debugged by machine locations and individual instructions from there,
+and resumed with `$P` (or `$p`, as case did not matter in the sixbit
+encoding that ITS used for filenames and commands, there being no
+lowercase characters). The command `:KILL` would kill the current
+job. Being dangerous, you couldn't just use `$^X` to kill it but had
+to write `$^X.` as a kind of confirmation that yes you really meant to
+kill it, and even then it might prompt you with a query. You'll see
+examples of these in some of the transcripts. You might even see
+`:MASSACRE` (only the first six characters mattered, so maybe just as
+`:MASSAC` or as `$$^X.`) to kill all existing jobs for that user.
+
+This is a little weird, but it's worth noting as well if you're trying
+to scrutinize detail in the transcripts: When specifying a filename in
+a number of tools, but again particularly at DDT, the control
+characters `^X` and `^Y` were self-inserting characters but meant
+"fn1" and "fn2" respectively. So, for example, if you had meant to
+print the file "foo bar" but had written "^Rbar foo" to see it, that
+would not just print the file but set the defaults. So you could fix
+that by issuing the command "^R^Y^X", which meant "^R foo bar" in that
+context where `^Y` in that moment meant `foo` and `^X` meant
+`bar`. Also, importantly, this was not simple string concatenation but
+a token break, so spaces were not essential, even though often
+written. There is an example in one of the files where you see a
+Fortran program that was presumably a file of some name like `FOO 23`
+and was probably printed by `^RFOO 23` or `^RFOO >` on a page above
+what is scanned. But what you can see after the Fortran program, still
+in the console session is `^R^X OUTPUT` which is saying, in the same
+cohort of files (those with a common fn1, such as `FOO`), some files are
+numbered, and `>` would have found the largest of them, but some are
+named and might have another function. Probably there is both a `FOO
+23` (input file) and a `FOO OUTPUT` output file, but regardless of
+what the first token (fn1) was, it was selecting `OUTPUT` as the fn2
+for that group.
+
+A `CTRL` (control) key did not add a control bit to a character. It
+masked out all but the character's low 5 bits (0-31). So pressing
+`CTRL+r` or `CTRL+R` did the same thing. And pressing `CTRL+Space` or
+`CTRL+@` did the same thing because each of these yields 0 mod 32. The
+notation `^R` is how a control-R would appear in most contexts. Most
+characters with codes below 32 decimal that did not have otherwise
+assigned purposes echoed this way. `^@` (0), `^A` (1), etc. Whether
+`^G` did an actual beep or echoed as `^G` depended on applications, as
+did Backspace (`^H`) and Linefeed (`^J`) and Formfeed (pagebreak, `^L`).
+
+You may see references to some of these notations in some of these files not
+because Fortran itself uses these, but because the translator examples use
+them, and also because the translator had a macro syntax involving `^S` that
+was chosen exactly because Fortran did _not_ use that character, so that the
+non-standard use didn't interfere with conforming Fortran.
+
+### About Lisp Style
 
 The programming styles in these files are pretty poor by modern
 standards. I blame that partly on me being new to large scale
@@ -309,8 +424,8 @@ language itself.
   Maclisp equivalent of Common Lisp's `#\` character notation) was
   invented. But that wasn't until after the all-purpose sharpsign
   readmacro had been created and socialized for debate before
-  eventually being distributed it with Maclisp as a pre-loaded
-  feature. (Unlike Common Lisp, which has been quote semantically
+  eventually being distributed with Maclisp as a pre-loaded
+  feature. (Unlike Common Lisp, which has been quite semantically
   stable since its standardization, Maclisp was notorious for almost
   weekly "breaking changes".)
 
@@ -353,84 +468,68 @@ I will, however, make some observations that you can think of as
 conversation starters for any future person who tries to 
 undertake such a Herculean task. :)
 
-It was customary for Macsyma
-to include a copyright line in its source files 
-and I almost certainly automatically 
-included such a line to accommodate the normal look and feel
-of Macsyma source files, without understanding its full
-legal implication.
-However, I recall no publication step for Macsyma sources,
-like there was with
-[the fiasco
-with the Pitmanual](https://maclisp.info/pitmanual/history.html),
-so I don't recall ever being presented a document
-in which I was meant to expressly 
-yield my intellectual
-property rights to MIT.
+It was customary for Macsyma to include a copyright line in its source
+files and I almost certainly automatically included such a line to
+accommodate the normal look and feel of Macsyma source files, without
+understanding its full legal implication.  However, I recall no
+publication step for Macsyma sources, like there was with
+[the fiasco with the Pitmanual](https://maclisp.info/pitmanual/history.html),
+so I don't recall ever being presented a document in which I was meant to
+expressly yield my intellectual property rights to MIT.
 
-It's also my recollection that the general 
-respectful handling
-of intellectual property rights of students writing such code
-was something that was
-evolving over time. I think the fact that it needed to be considered
-was only a creeping realization, or at least that's what it seemed
-to me from how I saw it handled over time in different situations involving
-thesis work by other people, for example.
-Matters also became
-simpler when computer prices came down enough that ordinary mortals
-could do real computation without paying a true fortune, so the 
-separation could be made more cleanly.
+It's also my recollection that the general respectful handling of
+intellectual property rights of students writing such code was
+something that was evolving over time. I think the fact that it needed
+to be considered was only a creeping realization, or at least that's
+what it seemed to me from how I saw it handled over time in different
+situations involving thesis work by other people, for example.
+Matters also became simpler when computer prices came down enough that
+ordinary mortals could do real computation without paying a true
+fortune, so the separation could be made more cleanly.
 
-And the
-situation was further complicated by the fact that
-my work was my own, but done on government-funded computers.
-Maybe that means the government had some intellectual
-property interest, too. I'm not
-sure of the terms of the funding. But as a taxpayer, I have to say I
-hope that the fact of government funding doesn't leave me poorer by retaining
-no rights to the citizens paying for that funding. 
+And the situation was further complicated by the fact that my work was
+my own, but done on government-funded computers.  Maybe that means the
+government had some intellectual property interest, too. I'm not sure
+of the terms of the funding. But as a taxpayer, I have to say I hope
+that the fact of government funding doesn't leave me poorer by
+retaining no rights to the citizens paying for that funding.
 
-I would hope the
-terms MIT worked out with the government for what was developed
-were pretty liberal (like
-the MIT license later came to be). I am not asserting that an MIT
-copyright notice means an MIT license automatically applied here, 
-just that I think it would be a compromise position I'd probably argue
-for if I were trying to figure one out. Or, put another way, it's a
-compromise that would satisfy my personal needs.
+I would hope the terms MIT worked out with the government for what was
+developed were pretty liberal (like the MIT license later came to
+be). I am not asserting that an MIT copyright notice means an MIT
+license automatically applied here, just that I think it would be a
+compromise position I'd probably argue for if I were trying to figure
+one out. Or, put another way, it's a compromise that would satisfy my
+personal needs.
 
 With a tool like this translator, as old and long dormant as it is,
-it's far too easy to mindlessly assert rights 
-without having any goal in mind beyond virtue-signaling and puffery
-to show one did
-one's abstract job of "protecting rights" from general encroachment,
-and in so doing to just stop
-legitimate use dead in its tracks because no one 
-wanting to invest in the making of new and experimental 
-uses also has the resources to
-fight large batteries of corporate lawyers over possible benefits
-that are at best speculative. In effect, at that point, intellectual property rights 
-become nothing more than the right to keep others from succeeding
-at something one never had a goal to succeed at themselves. There 
-may be a sense of power in that, and it may be a legal right, but there
-is no moral authority in that whatsoever, and it does damage to the
-legitimate investment of others. So I hope that isn't how it later
-resolves and I want to be on record as strongly as possible as saying
-that is not only a bad outcome but a general pattern that no court
-should ever sustain. 
+it's far too easy to mindlessly assert rights without having any goal
+in mind beyond virtue-signaling and puffery to show one did one's
+abstract job of "protecting rights" from general encroachment, and in
+so doing to just stop legitimate use dead in its tracks because no one
+wanting to invest in the making of new and experimental uses also has
+the resources to fight large batteries of corporate lawyers over
+possible benefits that are at best speculative. In effect, at that
+point, intellectual property rights become nothing more than the right
+to keep others from succeeding at something one never had a goal to
+succeed at themselves. There may be a sense of power in that, and it
+may be a legal right, but there is no moral authority in that
+whatsoever, and it does damage to the legitimate investment of
+others. So I hope that isn't how it later resolves and I want to be on
+record as strongly as possible as saying that is not only a bad
+outcome but a general pattern that no court should ever sustain.
 
-Copyright lasts way too long, and in situations
-where a stakeholder has asserted not the slightest interest in using
-such rights until someone else does the hard work of reviving
-something, the idea that it would not be obvious that the 
-right thing is to allow a liberal license so that value is not simply
-lost is repugnant to me. There most certainly do exist rights that
-can be used in such a way as to stop things dead in their tracks,
-but I am offended by that fact.
+Copyright lasts way too long, and in situations where a stakeholder
+has asserted not the slightest interest in using such rights until
+someone else does the hard work of reviving something, the idea that
+it would not be obvious that the right thing is to allow a liberal
+license so that value is not simply lost is repugnant to me. There
+most certainly do exist rights that can be used in such a way as to
+stop things dead in their tracks, but I am offended by that fact.
 
 Just in case you wondered about my opinion, both as the original
-author and, separately, as someone who has invested time and energy
-in the curation of these items.
+author and, separately, as someone who has invested time and energy in
+the curation of these items.
 
 But definitively resolving such a messy situation was too complicated
 for me to attempt as I preserve this historical record,
@@ -438,21 +537,15 @@ and that's why I am steering clear of offering even summary advice
 about how intellectual property can practically be construed here.
 
 I am raising only questions, not answers. And, yes, I'm hinting
-(loudly) my personal bias. I don't mean to assert the
-unique correctness of my point of view. But this is my metadata,
-and I'm not going to waste it by failing to say that I do
-have a point of view.
-As happens to all of us, I'll be gone at some point, and this
-might as well record my thoughts.
-Others have the entire Internet
-on which to
-voice alternative positions.
-And I could certainly 
-imagine other reasonable positions
-being advanced, I'm just not sure what they might be. If I could,
-I would have added them to my mulling here, if for no other reason
-than to be able to then respond to them.
+(loudly) my personal bias. I don't mean to assert the unique
+correctness of my point of view. But this is my metadata, and I'm not
+going to waste it by failing to say that I do have a point of view.
+As happens to all of us, I'll be gone at some point, and this might as
+well record my thoughts.  Others have the entire Internet on which to
+voice alternative positions.  And I could certainly imagine other
+reasonable positions being advanced, I'm just not sure what they might
+be. If I could, I would have added them to my mulling here, if for no
+other reason than to be able to then respond to them.
 
-Meanwhile, I'm just trying
-to put the data into some form that survives long enough for even
-those questions to matter. :)
+Meanwhile, I'm just trying to put the data into some form that
+survives long enough for even those questions to matter. :)

@@ -1,0 +1,35 @@
+Here you see a Fortran subroutine and then the Lisp code it generates,
+though still very full of macros you don't see defined here.
+
+You can see me
+
+ * Start a Lisp job with: q^K
+
+ * Load some stuff up with: (LOAD 'ONE)
+
+ * Look at the property list of FOO, the function ONE defines.
+   Note the LSUBR (one of several kinds of compiled functions in Lisp)
+   has address 124776 (octal -- both Lisp and DDT use octal by default).
+
+ * Interrupt Lisp to return to DDT: ^Z
+
+ * Open the location to see its contents:  124776/
+   The system responds here by telling me its contents in a friendly
+   symbolic form:  MOVE TT,INITIA
+
+ * Attach a label to that open location:  MAIN:
+
+ * View the successive locations. Here I'm not sure of the command but
+   I think it's linefeed, which is why there is no echo. So when on
+   the next page you see these, that's me seeing one location then
+   asking for the next interactively:
+
+      MAIN/  MOVE TT,INITIA
+      MAIN+1/  MOVE D,IN0
+      MAIN+2/  EXCH D,TT
+
+   etc.
+
+It's plain in the transcript that I am trying to follow along what's
+happening. I don't think at this point I can easily add a lot more
+commentary without more careful study than I have time for.

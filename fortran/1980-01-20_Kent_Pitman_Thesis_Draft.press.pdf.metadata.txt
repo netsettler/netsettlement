@@ -1,0 +1,5 @@
+This file, PIQUE;THESE PRESS, is a press file, which was a TeX output
+file suitable for printing on the Dover laser printer.
+
+This is a typeset draft of the thesis I was working on before my change
+of major. See the README.md file for more detailed information about that.

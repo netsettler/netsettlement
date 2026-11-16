@@ -152,6 +152,44 @@ may not) have been added in several specific ways. Additional metadata
 might evolve over time. I'm going to try to hold the artifact files
 constant.
 
+### `*.fanfold.*` files
+
+The morpheme '.fanfold' in a filename underscores the fact that the
+file was scanned from paper that was was 
+[large connected sheets](See https://en.wikipedia.org/wiki/Continuous_stationery)
+for continuous feed through a printer or paper console,
+such as an [LA36](https://en.wikipedia.org/wiki/Dot_matrix_printing#LA36),
+a common [computer terminal](https://en.wikipedia.org/wiki/Computer_terminal)
+device at MIT in the late 1970s combining a keyboard and printer for interactive
+use (predating [CRT](https://en.wikipedia.org/wiki/Cathode_ray_tube) displays,
+such as the [VT52](https://en.wikipedia.org/wiki/VT52)).
+
+The important thing to note from the point of view of this historical archive is
+that these pages did not fit in my scanner, so I had to scan pieces of these documents
+and ***anyone trying to OCR them will have to expect overlaps in the scans***
+and manually repair them. For example, such a document might contain pages like:
+
+| PDF Page  | Corresponding content in scanned artifact |
+| :-------: | :---------------------------------------- |
+| 1         | Top 2/3 of page 1                         |
+| 2         | Bottom 2/3 of page 1                      |
+| 3         | Top 2/3 of page 2                         |
+| 4         | Bottom 2/3 of page 2                      |
+
+Although in some cases there may be an interposed additional page or two
+where there is a width overrun. Such pages can usually be recognized because
+the left edge of the page does not seem to be the left edge of content.
+
+| PDF Page  | Corresponding content in scanned artifact |
+| :-------: | :---------------------------------------- |
+| 5         | Top 2/3 of page 3                         |
+| 6         | Leftmost side of bottom 2/3 of page 3     |
+| 7         | Rightmost side of bottom 2/3 of page 3    |
+
+In some cases, there may be a `.metadata.txt` file adding additional detail.
+But if there is not, take the filename as warning of such potential overlap.
+Good luck! :)
+
 ### `.metadata.txt` files
 
 Any artifact file _X_ in this repository might have a sidecar file
@@ -286,14 +324,17 @@ That's beyond the scope of this repository, so is only loosely linked here.
 Usually the `README.md` in the same directory as the `RESTORATIONS/` folder is
 expected to provide additional information.
 
-Note that when you do a plain `git clone ...`, submodule directories will be empty.
-You will need to either use this to check things out:
+Note that when you do a plain `git clone ...`, submodule directories 
+will be empty. You will need to either use this to check things out:
 
     git clone --recurse-submodules ...
 
 or else repair the checkout later with:
 
     git submodule update --init
+
+An example occurs in the [kbe/](kbe/) subdir here.
+See [its README.md](kbe/README.md) for details.
 
 ### Sticky Notes and Metadata Insert Pages
 

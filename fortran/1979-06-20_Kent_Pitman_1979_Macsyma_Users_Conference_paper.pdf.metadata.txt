@@ -1,0 +1,4 @@
+This is a typeset form of the paper that appeared in the conference proceedings.
+A webbed form appears at:
+https://nhplace.com/kent/Papers/Fortran-to-Lisp.html
+ --Kent Pitman 13-Nov-2026
