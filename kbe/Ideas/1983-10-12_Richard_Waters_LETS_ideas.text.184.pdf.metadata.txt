@@ -1,0 +1,28 @@
+This file lived on MIT-OZ, a PDP-10 running the Digital Equipment
+Corporation (DEC) TOPS-20 operating system, a proprietary operating
+system that MIT users were being pushed to use in place of ITS.
+
+The syntax "ps:<dick>" refers to the main "primary storage" device,
+which was customarily called "ps:" on TOPS-20 to distinguish it
+from a secondary storage disk, ss:, if I recall correctly. Note, too,
+the file system was case-sensitive but also case-translating, so unless
+you thwarted the case-translation by actively quoting something, it felt
+case-insensitive, and people often wrote PS: instead of ps:
+
+TOPS-20 was a versioned file system, so the fact that this is version
+184 shows that these ideas had been evolving for a while. How long is
+hard to say, as one might go a week without writing any versions, and
+then might write 10 or 20 versions in a day. But still, I'd bet a long
+time, with a lot of thought put in.
+
+Informally, Richard C. Waters went by the shortened form "Dick", so
+PS:<dick> is clearly his home directory, as it's the same directory
+name he used on the MIT-AI machine (though the file system syntax
+would be different there). Anyway we know he's the author of the LETS
+facility even though there is not a visible authorship claim on this
+document.
+
+The hand-lettered "KMP" is because I worked on this team and he knew I
+was involved in the design of Common Lisp and Scheme, and generally
+interested in language issues, so this is a review copy I received.
+  --Kent Pitman 16-Nov-2026

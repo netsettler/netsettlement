@@ -1,0 +1,7 @@
+See 1982-08-27_zvona_coder.lisp.77.annotated_by_KMP.pdf.metadata.txt
+for more context, but I suspect this is supporting code needed to
+make Dave Chapman (zvona)'s "smart" coder work.
+
+The annotations in here are by me, and all the same caveats from that
+other metadata file apply here.
+ --Kent Pitman 15-Nov-2026

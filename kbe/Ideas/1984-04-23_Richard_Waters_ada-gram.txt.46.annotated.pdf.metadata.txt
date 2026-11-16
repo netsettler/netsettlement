@@ -1,0 +1,10 @@
+I'm not sure whose handwriting it is, not mine, but there is a place
+in here where a bug has been called out in hand-written scrawl.  
+
+(At a quick glance, I didn't see the bug, though it might be that the
+Lispy form translates an else to another elsif, like how COND in Lisp
+uses a T [true] conditional rather than having special syntax for
+else. If it's not that, I don't know what it was. I didn't use Ada
+much except for these demos back then, and certainly I don't remember
+such detail now.)
+ --Kent Pitman 16-Nov-2026

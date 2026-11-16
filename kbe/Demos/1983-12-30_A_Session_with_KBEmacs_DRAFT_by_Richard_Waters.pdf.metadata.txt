@@ -1,0 +1,37 @@
+This is a draft. Note several important things:
+
+ * The memo number is AIM-753 (MIT AI Lab Memo 753).
+
+ * The document itself has no date, but the printer says the
+   date it was printed was 1983-12-30.
+
+But the historical record is confusing for making sure this information is logged properly.
+
+There IS a later paper called "The Programmer's Apprentice: A Session with KBEmacs" by Waters,
+which is much-cited. See citations at:
+
+https://www.semanticscholar.org/paper/The-Programmer's-Apprentice%3A-A-Session-with-KBEmacs-Waters/af582b71b26f2ea64ade12bfd7267993577ab448#citing-papers
+
+Alas, it's behind a paywall at IEEE so I cannot verify the
+content. But the publication date is November 1, 1985, almost two
+years later. Also, I _seriously_ doubt that IEEE published the paper
+in this form, with what amount to screenshots. (These are not actual
+screenshots, but they are unexplained representations of what you'd
+see on the screen, labeled only minimally by information about what
+commands would be executed.)  I also doubt, though it's possible, that
+the final paper was this detailed.
+
+I could not find an AI Memo 753 in MIT's DSpace.  There IS a paper in
+DSpace which calls itself MIT TR-753 (note similar number) and that
+paper is about the Programmer's Apprentice, but it is different:
+"KBEmacs: A Step Toward the Programmer's Apprentice"
+("A.I. T.R. No. 753", May 1985) by Richard C. Waters.
+
+So it's possible this changed a lot in those years. Or it's possible
+that something is misfiled. To make sure nothing was lost to history,
+I decided to go ahead and add this paper to the public collection.  I
+think it represents a materially different view than is likely to be
+available in the other documents, and it's likely especially of
+interest to historians wanting a window into how these programs could
+really be used.
+  --Kent Pitman

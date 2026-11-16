@@ -3,7 +3,7 @@
 ## Overview
 
 After I graduated MIT in 1981, I worked as a research associate on the
-Programmer's Apprentice project at the MIT Artificial Intelligence Laboratory.
+Programmer's Apprentice (PA) project at the MIT Artificial Intelligence Laboratory.
 My task was to create a user interface that ran
 on a [CADR Lisp Machine](https://mitmuseum.mit.edu/collections/object/1991.003.002),
 integrated with Zmacs, the Lisp Machine variant of Emacs.
@@ -290,3 +290,49 @@ interest and/or legal relevance in construing copyright:
     Department of Defense under Office of Naval Research contract
     N00014-80-C-0505, in part by National Science Foundation grants
     MCS-7912179 and MCS-8117633, and in part by the IBM Corporation.
+
+### Kent's work on the Programmer's Apprentice
+
+I worked primarily on the user interface, coming up with a way to host
+the Programmer's Apprentice on a Lisp Machine, integrated with Zmacs,
+what came to be called KBEmacs.
+
+The issues involved were integration with Zmacs and figuring out how
+to interface asynchronously to an agentic component running in
+background. The Lisp Machine had ways to run a background task in a
+straightforward way, such as process-run-function that would do a
+function call in another process (they would be called threads in the
+modern parlance, as they were not a separate address space, and not
+what would now be called threadsafe without explicit calls to locking
+primitives, though such were straightforwardly available). It was a
+lot just figuring out what felt comfortable interactively since in the
+early 1980s, while we had bitmapped screens, a window system, and
+multiple tasks that collaborated, the specific UI experience and "best
+practices" were not as richly available.  It was all new ground.
+
+As I recall, I also did some stylistic rewriting of the core system,
+mainly conversion to remove the leading digits (a kind of poor man's
+package system) from function names, since a lot of the early PA stuff
+had function names like `2this` and `5that` to keep the functions from
+colliding. The rewriting used conventional packages, which in Zetalisp
+at that time were very similar to modern Common Lisp packages.  Other
+cosmetic things to make the system feel more natural for Lisp Machine
+programming. But I was not involved in the core actions of the tools
+for ingesting, processing the requests, or coding things back up. My
+part was primarily connective.
+
+This is important because sometimes files may appear to be in
+directories owned by me, but that doesn't make me the author (MIT was
+the author of record for copyright, I mean, but the person who coded
+things). Rich, Waters, and others were the ones to created the core
+system.
+
+My work began in early 1982. I have a copy elsewhere of the offer
+letter from the AI Lab dated Jan 29, 1982, so I have reasonable
+confidence in that date not being earlier than that.  Before that, in
+fall of 1981 after my summer 1981 graduation from MIT, I think I was
+working at the Yale Computer Science Department in the summar and then
+back at the Lab for Computer Science, working on Macsyma-related
+things, in the fall. My work ended sometime in early 1985, when I took
+a job at Symbolics working on Macsyma, which MIT had licensed to
+Symbolics for proprietary development.

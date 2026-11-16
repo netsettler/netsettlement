@@ -1,0 +1,20 @@
+I don't recall writing this code.  The fact that it appears in my
+personal directory should not be taken as a clue to authorship.
+
+It was probably copied from elsewhere into my directory to read, or
+perhaps to modify in light ways. We didn't have a tool like git so
+things were just shuffled around without that kind of marking. (We DID
+have a versioned file system though, so even if this was a stray file,
+its version is probably consistent with other versions that may appear
+elsewhere.)
+
+I _think_ it's probably the "regular" coder that had been in existence
+long before my hire in 1982. Maybe something by Rich or Waters.  Dave
+Chapman (login name "zvona") wrote an alternate ("smart") coder that I
+have a copy of from a similar time period, and I think it likely I had
+both files in my directory so I could print them out to read, or so I
+could compare the regular one to the smart one.
+
+If you have not read the KBE README.md file (../README.md), on the issue
+of Chapman's coder, it's worth reading that for additional context.
+ --Kent Pitman 15-Nov-2026

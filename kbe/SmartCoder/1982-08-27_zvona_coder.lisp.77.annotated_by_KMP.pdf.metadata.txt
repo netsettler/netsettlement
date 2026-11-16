@@ -1,0 +1,15 @@
+I think this is part of Dave Chapman (zvona)'s "smart coder".
+See the KBE README.md file (../README.md) for context.
+
+I don't have any idea if this can be run standalone, nor about whether
+it will plug in gracefully to the later listings that Shrager has
+managed to get running. (See our paper https://arxiv.org/abs/2610.36341
+for details on that.)
+
+This has annotations by me that were contemporaneously written on the
+paper artifact, probably to be delivered to or discussed with Dave.
+
+Probably that will make OCR annoyingly error-prone. Sorry about that.
+Complain to my decades-old self about leaving better artifacts next
+time around. :)
+ --Kent Pitman 15-Nov-2026
