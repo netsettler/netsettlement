@@ -71,3 +71,11 @@ ARCHIVE/
 # Vi
 *.swp
 *.swo
+
+# Compiled Lisp or other binaries
+# Probably just testing interpreted code. Doesn't need to be checked in.
+
+*.fas
+*.fasl
+*.lib
+*.bin

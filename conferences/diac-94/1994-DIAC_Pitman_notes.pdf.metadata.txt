@@ -1,0 +1,16 @@
+This scan is of hand-written notes by me. It's pretty messy--not my
+best job of note-taking. But I suppose it's as useful a snapshot of
+impressions as any, so I am electing to just leave it in its fairly
+raw form rather than to try to edit it. It appears to just be notes I
+took at 1994 DIAC (Directions and Implications of Advanced Computing)
+conference.
+
+My possibly-faulty recollection of this event was that it was one of
+the activities kickstarted by Computer Professionals for Social
+Responsibility (CPSR), though in some sense CPSR was just a way of
+speaking in the aggregate about numerous grassroots things that were
+springing up on the issue of computer ethics. I very much miss CPSR,
+which when it was dissolved (for reasons that were primarily
+financial, I believe) left a gaping hole that has not really been
+properly filled by other organizations since.
+ --Kent Pitman 22-Nov-2026

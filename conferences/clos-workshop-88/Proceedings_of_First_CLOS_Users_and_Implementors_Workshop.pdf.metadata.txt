@@ -1,0 +1,46 @@
+This document is my scan of
+  Proceedings of the First CLOS Usersand Implementors Workshop
+
+This event was held October 3rd and 4th, 1988 at Xerox Palo Alto Research Center (PARC) in Palo Alto, California. It was sponsored by the Xerox Corporation.
+
+From the frontmatter, which oddly did not list titles, just participants, even though the individual included works do have titles:
+
+Name | Affiliation | Page
+Anderson, Kenneth R., Thome, Michael and Shapiro, Richard | BBN | 1
+Attardi, Giuseppe and Boscotrecase, Maria | Delphi | 3
+Aoki, Ryuichi | Fuji Xerox | 9
+Bennett, James, Clifford, Chris and Dawes, John | Coherent Thought Inc. | 11
+Bobrow, Daniel G. and Kiczales, Gregor | Xerox PARC | 15
+Cointe, Pierre and Graube, Nicolas | Equipe Mixte Rank Xerox France & L.I.T.Р. | 23
+Dappert - Farquhar, A. | Siemens | 31
+Davidson, John, Antonisse, H. James and Tucker, Richard | MITRE Washington Al Technical Center | 35
+Davis, Harley and Mittal, Sanjay | Xerox PARC | 39
+Van Roggen, Walter and Piazza, Jeffrey | Digital Equipment Corporation | 45
+Dussud, Patrick | Lucid Inc. | 47
+Dye, John | Advanced Decision Systems | 51
+Ford, Steve | Information Technologies Laboratory | 53
+Foderoro, John and Veitch, Jim | Franz, Inc. | 55
+Gabriel, Richard | Lucid Inc./Stanford University | 57
+Gateley, John | Texas Instruments | 63
+Goldman, Neil | USC/Information Sciences Institute |  65
+Hayata, Hiroshi | Fuji Xerox | 69
+Weyrauch, Richard and Posner, David | Ibuki | 71
+Ida, Masayuki | Aoyama Gakuin University | 73
+Intelligent Information Access Project | Xerox PARC | 77
+Johnson, Vaughan and Mike Hewett | Stanford University | 79
+Jones, Jeremy and Byers, Gary | Coral Software | 81
+Kempf, James | SUN Microsystems | 83
+Kenner, Martin and Collins, John | 3M Software R&D | 101
+Lanning, Stan | Xerox PARC | 103
+McBride, Philip | Schlumberger Palo Alto Research | 107
+McDonald, John | University of Washington | 111
+Muller, Carl | SUN Microsystems | 115
+Paepcke, Andreas | Hewlett-Packard | 117
+Pettergill, Robert | MCC | 121
+Rao, Ramana | Xerox PARC | 125
+Rose, John | SUN Microsystems | 129
+Rowe, Lawrence | UC Berkeley | 135
+Schmidt, Heinz | Geman National Research Center | 139
+Schneider, Matthias | Siemens | 143
+Sutton, Angela | University of Aberdeen/Schlumberger | 145
+Wallace, David | Hewlett-Packard | 149
