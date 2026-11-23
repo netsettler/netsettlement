@@ -1,0 +1,18 @@
+I don't know who authored this. I don't think it was me.
+
+I also don't know if this is redundant with, layered upon, or
+uncorrelated with the Mycin implementation here.
+
+Trivia about the original paper artifact: Different from many other
+ bits of hardcopy, this was printed on MIT stationary. An MIT
+ watermark did not show up in the image, fortunately, as it would
+ distract from the text, but a good piece of the page had a very faint
+ MIT logo embedded in the sheet of paper. The text that DID scan looks
+ more like it was typed in on a typewriter than printed on the normal
+ XGP or Dover laser printer that were commonly used to print things in
+ those days.  Maybe it was done on a home printer, but it was
+ unusually good quality. (None of this matters to the content, it was
+ just interesting, I thought.)
+
+ --Kent Pitman 20-Nov-2026
+ 

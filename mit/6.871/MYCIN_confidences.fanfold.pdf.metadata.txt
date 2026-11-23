@@ -1,0 +1,7 @@
+This appears to be some random graphical* documentation about how the
+various confidences relate to ranges of values. It was on fanfold paper,
+presumably from an LA36. See notes in the repository's main README.md
+for the significance of that.
+ --Kent Pitman
+
+*such as it was in the day of just ASCII :)

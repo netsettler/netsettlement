@@ -1,0 +1,27 @@
+GOBBLE appears to be a home-grown database facility for storing
+structured content in an organized way--indexed, sensitive to context,
+available for pattern matching. It makes heavy use of gensyms and
+symbol property lists, and modifies the printer in some situations so
+that its data will display in a more friendly way.
+
+The information below appears in a comment on the first page of this
+Maclisp source file. (The information has been reformatted for use
+here, but other than formatting, this is the contemporaneously-chosen
+textual content. There are four initial pages of documentation in all.)
+ --Kent Pitman 22-Nov-2026
+
+==============================================================================
+
+ GOBBLE: INTRODUCTORY REMARKS
+
+ The following is the (MAC)LISP code for the
+ implementation of the GOBBLE data base.
+
+ GENERAL USE OF THE GOBBLE DATA BASE
+
+ The GOBBLE data base provides four facilities:
+
+ 1. Entering items into the data base via the function, "GOBBLE"
+ 2. Matching items already in the data base via the function "CMATCH"
+ 3. Moving up item trees via the function "*UP" (see below).
+ 4. Removing items from the data base via the function "REMOVE".

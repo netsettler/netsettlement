@@ -1,0 +1,8 @@
+SIPB = Student Information Processing Board
+It's a volunteer group, MIT's oldest computer club, founded in 1969.
+Both historically and until this date, they work on projects that
+serve the MIT community. They administered access to various kinds of
+computational resources that students might need and provided
+technical support of various kinds.
+
+MIT Multics was one of several computers that MIT had in the late 1970's.

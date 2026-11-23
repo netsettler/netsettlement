@@ -1,0 +1,122 @@
+I personally find the metadata clues as interesting as the file data here, so I've elaborated a fair
+bit about that. Notes on the file content itself is at the end.
+ --Kent Pitman 21-Nov-2026
+
+The author is plainly Peter Szolovits (PSZ @ MIT-ML). MIT-ML was his
+home machine, and where a lot of leading edge computational
+linguistics and computational medicine research work was done at the
+time. It ran the ITS operating system.
+
+This is a Lisp (specifically Maclisp, as described at maclisp.info) source file.
+
+Next the dates:
+
+1976-07-16 is the date in the document header. Presumably it was later edited without updating this,
+           so this is what some operating systems (not ITS) would call the "Creation Date".
+
+1977-08-17 is the date that the printer cover page calls the "Creation Date". In modern parlance,
+           that would be the "Last Modified" date, but I don't think ITS made that distinction.
+           In any case, that's likely to be the date that some edit was made.
+
+1978-10-28 is the date that I printed this document.
+
+The FILENAME is ML: LIBDOC; FOR PSZ2
+
+For those not familiar with the ITS file system the parts of that are:
+
+  ML      This is the device name. This refers to the MIT-ML machine, one of four machines
+          that ran the MIT operating system. 
+
+  LIBDOC  This was a shared directory. I thought mostly for documentation, but apparently
+          not in this case. This is loadable code.
+
+  FOR     The filename1 (or fn1) generally tells you what the file was for. In this case,
+          I'm reasonably confident it means an iteration macro named "FOR" (as in LOOP FOR...)
+
+  PSZ2    PSZ is Peter Szolovits' login name, and this might encode that the file lives for real
+          in his own directory as ML: PSZ; FOR 2.  Or it might be just that this was the second
+          version he had published.
+
+SOME RANDOM BUT RELATED FILENAME TRIVIA:
+
+ * Remember that files have 4 parts, each that can be a maximum of six
+   characters in sixbit encoding, no lowercase for example. Devices,
+   optional, often defaulting to DSK:, are optional. Directories, of
+   defaulting to the current working dir, are optional, and
+   semicolon-terminated.
+
+ * DSK: is the default device, but ML: was used here.
+   Doing (LOAD "ML:LIBDOC;FOR") or (LOAD "ML:LIBDOC;FOR >") was
+   superior to (LOAD "DSK:LIBDOC;FOR") or (LOAD "DSK:LIBDOC;FOR >")
+   because the DSK: versions only worked if you were running a
+   program on the ML machine. But there was a networked file
+   system between the ITS machines, so using ML: in a filename would
+   open a network stream to pull in the data no matter which of the
+   four ITS machines you were on.
+
+ * Files had either types or versions. The version was usually
+   inferrable by looking inside, or by the call to open it, so mostly
+   types were omitted and the filename2 was a number.  If you write a
+   file "FOO >" to disk and it does not exist, you get "FOO 1"
+   written. If you read "FOO >" and "FOO 1" is greatest, you get
+   that. If you then write "FOO >" you get "FOO 2".
+
+   HOWEVER, and this is what's interesting here, if you have a file
+   "FOR PSZ2". This will in fact be found in preference to "FOR PSZ1"
+   (if such a file exists) when you read "FOR >". (Whether it's the
+   default otherwise depends on other factors. In particular if both
+   "ML:LIBDOC;FOR PSZ2" and "ML:LIBDOC;FOR FASL" exist, then the
+   former is a source file and the latter is the compiled Lisp, and
+   (LOAD "ML:LIBDOC;FOR >" would find "FOR PSZ2" (preferring it over
+   "FOR PSZ1" if it existed) and would ignore "FOR FASL" (because ">"
+   prefers numbered files when they exist). But (LOAD "ML:LIBDOC;FOR")
+   would first look for "ML:LIBDOC;FOR FASL" before falling back and
+   looking for "ML:LIBDOC;FOR >".
+
+   Given the small number of characters for encoding information, the
+   name "FOR PSZ2" therefore encodes several things: This is part of a
+   cohort of files named "FOR". It is part of a numeric sequence that
+   can be superseded straightforwardly. And that it is probably owned
+   by PSZ (which the file contents happen to confirm in this case, but
+   in the general case might not). It would not be surprising to find
+   a file "ML:PSZ;FOR 2" that is the same content or linked by a
+   symbolic link in one direction or the other, but there is not
+   enough information in this artifact to know that. I'm just trying
+   to explain why names like this got chosen.
+
+   For example, an alternate thing this might tell us is that this is
+   the second version PSZ shared. For example, it wouldn't have been
+   that unusual to see "ML:LIBDOC;FOR PSZ1" linked to (or a copy of)
+   some random version like "ML:PSZ;FOR 17" and then 
+   "ML:LIBDOC;FOR PSZ2" linked to (or a copy of) some later version
+   like "ML:PSZ;FOR 259", so that PSZ could continue editing files
+   in his directory without accidentally releasing them until they
+   were debugged.
+   
+   But my bet is that this was not linked and instead copied since
+   there was constant pressure to clean up disk space, deleting old
+   versions and to have a shared directory link into vulnerable storage
+   in someone's personal directory would have been unlikely.
+   (It was possible to use :SFREAP at the DDT level to set a file's
+   "don't reap" bit, so that this was less likely, but it wasn't
+   foolproof.)
+
+ABOUT THE CONTAINED CODE:
+
+LOOP was not originally standardized, so many people wrote their
+own. Each version differed in subtle ways.
+
+If you look at the code (page 4), you can see that any of the loop
+keywords were able to be the name of the macro and that it all did a
+trampoline call ("shim", I guess one would say now) through a common
+interface that didn't require saying a common word like "LOOP" at the
+start. So I'm pretty sure this version lets you write either
+(SUM X FOR X FROM 1 TO 3) or (FOR X FROM 1 TO 3 SUM X).
+
+HOWEVER, what I'm less sure of (and you'd have to run the code to see)
+is whether those mean the same thing.  It could well be that one of
+those gets you (0 1 2) and the other (1 2 3) because many people did
+macros like this and the position of the accumulation code before or
+after the test-and-bump often made it all the way into the code. Some
+thought that a feature, but we thought it was confusing in the design
+of Common Lisp, so we normalized things like that.

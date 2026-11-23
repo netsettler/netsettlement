@@ -1,0 +1,8 @@
+This is not just an alternate scan of the .alternative1. file,
+this is is a different rendition of it that had been printed 
+onto fanfold paper. I opted to just retain both rather than
+stress over which one to keep.
+
+See notes in the repository's master README.md for notes about
+interpreting .fanfold files.
+ --Kent Pitman 22-Nov-2026

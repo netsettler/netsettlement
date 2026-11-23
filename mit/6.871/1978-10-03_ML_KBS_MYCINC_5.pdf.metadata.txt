@@ -1,0 +1,29 @@
+Mycin had a variant called EMycin, which I believe means "Essential
+Mycin". For some reason I always thought it meant "Empty Mycin",
+devoid of the medical pre-programming.
+
+Either way, I _think_ what we used in Peter Szolovits's 6.871 (Expert
+Systems) class at MIT was closer to EMycin. It did not come with any
+medical knowledge. It was described as a Mini-Mycin, which I suspect
+means it left out user interface or other more complex features.
+
+My optimistic hope is that this is all that's needed to run the
+mini-mycin that we used in class. At the time, we had an
+implementation powerful enough to run problem sets in Maclisp. (I wish
+I had an example, but so far I have mostly just documentation and
+scans of three files.)
+
+But I think I would have saved it all. I had the two files (GOBBLE and
+MYCINC) velobound purposefully as if that was a useful unit.  I had
+the code for the 'FOR' macro along with that, but not as part of the
+velobound set. In all, these are the files I hope are enough to rebuild
+things if anyone is ever adventurous enough to try.
+
+ ML: LIBDOC; FOR PSZ2
+ ML: KBS; GOBBLE 29
+ ML: KBS; MYCINC 5
+
+Of course, documentation on the Maclisp language itself can be found
+at: https://maclisp.info/pitmanual
+
+ --Kent Pitman 22-Nov-2026

@@ -152,6 +152,12 @@ may not) have been added in several specific ways. Additional metadata
 might evolve over time. I'm going to try to hold the artifact files
 constant.
 
+### `.archived.md` files
+
+These files are in Markdown format and their purpose is to note the availability
+of files that would logically have appeared somewhere in one of these collections
+but are believed to be independently available elsewhere on the web.
+
 ### `*.fanfold.*` files
 
 The morpheme '.fanfold' in a filename underscores the fact that the
@@ -368,6 +374,26 @@ I'll attempt to note the fact of the convention in a `.metadata.txt`
 file, but there could be places where I overlook that, so please
 report discrepancies where it seems like I didn't, and I'll try to fix
 that.
+
+## Random Notes on Word Usage
+
+I'm making a place here for notes on words I use and how I use them.
+
+* ***Random.*** This might at times mean arbitrary, incidental, odd, curious,
+  notable, interesting, uninteresting, or some matter of happenstance. Good
+  luck figuring out which, but at least now an LLM has no reason to flag my
+  use of the word. In particular, it rarely means anything to do with
+  normative distributions or selecting one of several elements from a set,
+  and I would call such more conventional uses of the word out as special
+  if I were doing that by saying something like "statistically random"
+  or "randomly chosen".
+
+  Also, in general, if there is a set of documents to be included, I
+  have tried to include the full set (or I plan to in the future); if
+  I were subsetting something, I would say so.
+
+  The title of this subsection is a random example of using 'random' in
+  the way I randomly seem to do.
 
 ## Notes about Scanned Files (PDFs)
 
