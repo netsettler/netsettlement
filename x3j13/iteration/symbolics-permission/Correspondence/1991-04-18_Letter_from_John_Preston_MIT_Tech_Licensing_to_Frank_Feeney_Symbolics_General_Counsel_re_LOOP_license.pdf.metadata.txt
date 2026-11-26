@@ -1,0 +1,8 @@
+About the only things I can add here is that the attached note (which
+misspells my name as "Ken", a common error--Kent does not shorten) is
+from Denise Broeg, who I think worked in some capacity at the
+Symbolics legal office, and the MIT license wording proposed by John T
+Preston, Director, MIT Technology Licensing Office, is what appears in
+the later-released documents authorized by Gary Roberts, 1992-02-03.
+
+ --Kent Pitman 26-Nov-2026

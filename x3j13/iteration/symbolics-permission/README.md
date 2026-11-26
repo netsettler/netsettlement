@@ -59,6 +59,18 @@ files he was referring to, so that would presumably make the actual
 file names unlikely to be important from a legal standpoint and mainly
 a useful bit of contemporary provenance.
 
+There is some record of the interchanges that led to the writing of this
+letter contained in 
+[the Correspondence folder](Correspondence/README.md)
+within this folder.
+
+There was a prior draft of this letter that was marked up for changes in
+[the Drafts folder](Drafts/README.md)
+within this folder.
+
 Gary names me as the person to ask questions of, which is probably
-why I ended up with a copy of this material in my files.\
+why I ended up with a copy of this material in my files. I wish I had
+a better memory of some of the details here, but the
+[the Correspondence folder](Correspondence/README.md)
+is your best hope for anything beyond what I've said here.\
 &emsp;&mdash;_Kent Pitman_, 26-Nov-2026

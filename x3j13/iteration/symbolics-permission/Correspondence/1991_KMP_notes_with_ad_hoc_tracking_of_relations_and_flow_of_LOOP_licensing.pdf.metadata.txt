@@ -1,0 +1,8 @@
+I'm never quite sure what to do with things like this. There's not a
+lot of information content here but there are some references to other
+players, like Palladian. I have a vague recollection that they were a
+customer. Why they were mentioned I don't recall, but I assume they
+could have been writing code of their own that needed to depend on
+this stuff. In any case, you're kind of on your own interpreting
+anything here. I just included it for color (real and figurative).
+ --Kent Pitman 26-Nov-2026
