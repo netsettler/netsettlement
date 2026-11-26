@@ -1,0 +1,7 @@
+The document explains that Symbolics "decided to release the right to
+use a portion of its LISP system, known informally as 'ANSI LOOP
+facility,' so that others in the LISP community may use it."
+
+The document had attachments, which are separate files in this folder.
+For additional detail, see the README.md in this folder.
+ --Kent Pitman 26-Nov-2026

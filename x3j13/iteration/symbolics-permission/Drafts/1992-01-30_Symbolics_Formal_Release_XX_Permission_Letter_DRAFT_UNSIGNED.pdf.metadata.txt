@@ -1,0 +1,5 @@
+I included this just because everything in the modern world is done
+completely differently and it was a bit of evidence about process.
+But this document, unlike the other documents with it, is not part
+of the final collection of documents.a
+  --Kent Pitman 26-Nov-2026
