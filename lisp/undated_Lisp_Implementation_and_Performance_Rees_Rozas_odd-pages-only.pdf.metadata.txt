@@ -1,0 +1,5 @@
+Probably a document that is missing half its pages isn't super-useful,
+but I thought it wasn't inconceivable that someone would want to know
+there had been such a paper and might even want to sample what kind of
+content it contained.
+ --Kent Pitman 26-Nov-2026
