@@ -1,0 +1,28 @@
+Please note that there are two parts to this document. If you only
+look at the first few pages, you'll get confused as to its nature.
+There is additional context in the README.md in this folder.
+
+The total size of this PDF document is 198 pages.
+
+The first part is hand-written notes by me on the meeting itself:
+who said what, what kinds of votes were taken, etc.
+
+The second part (which begins numbering as page 1 but is actually page
+24 of this PDF document) is the 175 page file that I maintained called
+  S:>KMP>lisp>x3j13>notes>positions.text.580
+This is a file on the Stony-Brook.SCRC.Symbolics.COM file server
+that Moon and I used to coherently coordinate our representation
+of Symbolics positions to X3J13.
+
+This is NOT a committee document, it was an internal communication
+between me and Moon.
+
+At the time it would have been considered confidential, but once the
+standard was published, it lost any strategic power and became just
+a historical artifact.
+
+When constructing this archive, I contacted Moon to see if he minded
+having this go public, since it might have personal impressions of his
+somewhere in it; he said it was fine to use without that kind of
+filtering.
+ --Kent Pitman 26-Nov-2026
